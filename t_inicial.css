@@ -23,13 +23,6 @@ body {
   }
 }
 
-@media screen and (max-width: 598px) {
-  img {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
 /*Imagem de Fundo*/
 .imagem {
   display: flex;
@@ -39,6 +32,13 @@ body {
 
 img {
   width: 290px;
+}
+
+@media screen and (max-width: 598px) {
+  img {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
 /*Conteudo do Formulario*/
