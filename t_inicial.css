@@ -30,8 +30,8 @@ body {
   margin-top: -20px;
 }
 
-img {
-  width: 290px;
+#fundo {
+  width: 390px;
 }
 
 @media screen and (max-width: 598px) {
@@ -69,7 +69,7 @@ input {
   height: 4vh;
 }
 
-#campo::placeholder {
+#campo::placeholder after{
   color:#000000;
   position: absolute;
   font-weight: bold;

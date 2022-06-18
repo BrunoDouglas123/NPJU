@@ -13,7 +13,7 @@ body {
     height: 40px;
     padding-top: 2.5vh;
 
-    margin-left: -740px;
+    margin-left: -735px;
 }
 
 .busca {
@@ -25,7 +25,7 @@ body {
     position: absolute;
     width: 1400px;
     height: 31px;
-    left: 93px;
+    left: 86px;
     top: 19px;
 
     border: 1px solid #000000;
@@ -37,7 +37,7 @@ body {
     color:#000000;
     position: absolute;
     font-weight: bold;
-    margin-top: 6px;
+    margin-top: 8px;
     margin-left: 6px;
 }
 
@@ -46,18 +46,18 @@ body {
         display: flex;
         justify-content: center;
         position: absolute;
-        width: 320px;
+        width: 361px;
         height: 26px;
         left: 41px;
         top: 14px;
     }
 
     #lupa {
-        width: 31px;
+        width: 28px;
         height: 31px;
         padding-top: 2.5vh;
-    
-        margin-left: -190px;
+
+        margin-left: -1px;
     }
 }
 
@@ -69,7 +69,7 @@ body {
     width: 242px;
     height: 21px;
     left: -40px;
-    top: 40px;
+    top: 0;
 }
 
 .user address {
@@ -89,13 +89,17 @@ address {
     font-family: 'Ovo';
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 28px;
     text-align: center;
 }
 
 address span a {
     color: white;
+}
+
+.linha {
+    display:inline;
 }
 
 #icone {
@@ -106,6 +110,73 @@ address span a {
     top: 106px;
 }
 
+#second1 {
+    font-family: "Ovo";
+    position: absolute;
+    width: 109px;
+    height: 26px;
+    top: 328px;
+    left: 13vh;
+    font-size: 10px;
+    
+    color: #FFF;
+    background: #2F3032;
+    border: 1px solid #FFFFFF;
+    border-radius: 28px;
+  }
+  
+  #second2 {
+    font-family: "Ovo";
+    position: absolute;
+    width: 109px;
+    height: 26px;
+    top: 290px;
+    left: 13vh;
+    font-size: 10px;
+    
+    color: #FFF;
+    background: #2F3032;
+    border: 1px solid #FFFFFF;
+    border-radius: 28px;
+}
+
+@media screen and (max-width: 428px) {
+    nav {
+        width: 20px;
+        height: 100%; 
+    }
+
+    address {
+        font-size: 15px;
+    }
+
+    .user {
+        position: absolute;
+        display: flex;
+        justify-content: flex-start;
+        width: 242px;
+        height: 21px;
+        left: -40px;
+        top: 10px;
+    }
+
+    #second1 {
+        width: 79px;
+        height: 23px;
+        top: 290px;
+        left: 20vh;
+        font-size: 10px;
+    }
+
+    #second2 {
+        width: 79px;
+        height: 22px;
+        top: 322px;
+        left: 20vh;
+        font-size: 10px;
+    }
+}
+
 /*Imagem de Fundo*/
 .imagem {
     display: flex;
@@ -113,8 +184,13 @@ address span a {
     margin-top: 13vh;
 }
 
+#fundo {
+    width: auto;
+    height: auto;
+}
+
 @media screen and (max-width: 428px) {
-    img {
+    #fundo {
       flex: 50%;
       max-width: 50%;
     }
@@ -164,7 +240,7 @@ p {
 
 @media screen and (max-width: 428px) {
   #log {
-    width: 186px;
+    width: 99px;
     height: 36px;
     margin-top: 13px;
     margin-left: 8px;
