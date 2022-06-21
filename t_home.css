@@ -46,7 +46,7 @@ body {
         display: flex;
         justify-content: center;
         position: absolute;
-        width: 361px;
+        width: 268px;
         height: 26px;
         left: 41px;
         top: 14px;
@@ -113,11 +113,11 @@ address span a {
 #second1 {
     font-family: "Ovo";
     position: absolute;
-    width: 109px;
+    width: 120px;
     height: 26px;
     top: 328px;
-    left: 13vh;
-    font-size: 10px;
+    left: 12vh;
+    font-size: 13px;
     
     color: #FFF;
     background: #2F3032;
@@ -128,11 +128,11 @@ address span a {
   #second2 {
     font-family: "Ovo";
     position: absolute;
-    width: 109px;
+    width: 120px;
     height: 26px;
     top: 290px;
-    left: 13vh;
-    font-size: 10px;
+    left: 12vh;
+    font-size: 13px;
     
     color: #FFF;
     background: #2F3032;
@@ -147,7 +147,9 @@ address span a {
     }
 
     address {
-        font-size: 15px;
+        font-size: 11px;
+        margin-top: -20px;
+        margin-left: 0px;
     }
 
     .user {
@@ -156,23 +158,30 @@ address span a {
         justify-content: flex-start;
         width: 242px;
         height: 21px;
-        left: -40px;
-        top: 10px;
+        left: -71px;
+        top: -60px;
+    }
+
+    #icone {
+        width: 61px;
+        height: 61px;
+        margin-top: 10px;
+        margin-left: 3px;
     }
 
     #second1 {
-        width: 79px;
-        height: 23px;
-        top: 290px;
-        left: 20vh;
+        width: 81px;
+        height: 20px;
+        top: 266px;
+        left: 104px;
         font-size: 10px;
     }
 
     #second2 {
-        width: 79px;
-        height: 22px;
-        top: 322px;
-        left: 20vh;
+        width: 90px;
+        height: 20px;
+        top: 296px;
+        left: 100px;
         font-size: 10px;
     }
 }
@@ -187,6 +196,8 @@ address span a {
 #fundo {
     width: auto;
     height: auto;
+
+    margin-left: -9vh;
 }
 
 @media screen and (max-width: 428px) {
@@ -247,7 +258,7 @@ p {
 }
 
   p {
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 28px;
   }
 }

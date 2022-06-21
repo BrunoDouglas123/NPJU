@@ -94,7 +94,7 @@ input {
   width: 142px;
   height: 35px;
   left: 96vh;
-  top: 648px;
+  top: 898px;
   
   color: #FFF;
   background: #2F3032;
@@ -108,7 +108,7 @@ input {
   width: 142px;
   height: 35px;
   left: 96vh;
-  top: 696px;
+  top: 848px;
   
   color: #FFF;
   background: #2F3032;
@@ -120,7 +120,7 @@ a {
   color: #8699BE;
   position: absolute;
   margin-top: 1vh;
-  margin-left: 13vh;
+  margin-left: 17vh;
 }
 
 @media screen and (max-width: 598px) {
@@ -143,14 +143,18 @@ a {
     width: 150px;
     height: 34px;
     top: 502px;
-    left: 27vh;
+    left: 26vh;
   }
 
   #second2 {
     width: 150px;
     height: 34px;
     top: 453px;
-    left: 27vh;
+    left: 26vh;
+  }
+
+  a {
+    margin-left: 14vh;
   }
 }
 
