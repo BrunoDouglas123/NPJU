@@ -23,6 +23,12 @@ body {
   }
 }
 
+@media screen and (max-width: 388px) {
+  #np {
+    font-size: 20px;
+  }
+}
+
 /*Imagem de Fundo*/
 .imagem {
   display: flex;
@@ -65,8 +71,10 @@ input {
 }
 
 #campo {
-  width: 45vh;
+  width: 65vh;
   height: 4vh;
+
+  margin-left: 20px;
 }
 
 #campo::placeholder after{
@@ -116,11 +124,25 @@ input {
   border-radius: 28px;
 }
 
+#second1 a {
+  color: #FFF;
+  text-decoration: none;
+  left: -68px;
+  top: 4px;
+}
+
+#second2 a {
+  color: #FFF;
+  text-decoration: none;
+  left: -52px;
+  top: 4px;
+}
+
 a {
   color: #8699BE;
   position: absolute;
   margin-top: 1vh;
-  margin-left: 17vh;
+  margin-left: 14vh;
 }
 
 @media screen and (max-width: 598px) {
@@ -142,19 +164,91 @@ a {
   #second1 {
     width: 150px;
     height: 34px;
-    top: 502px;
+    top: 518px;
     left: 26vh;
   }
 
   #second2 {
     width: 150px;
     height: 34px;
-    top: 453px;
+    top: 473px;
     left: 26vh;
+  }
+
+  #second1 a {
+    color: #FFF;
+    text-decoration: none;
+
+    width: 150px;
+    height: 34px;
+    top: 4px;
+    left: -14vh;
+  }
+  
+  #second2 a {
+    color: #FFF;
+    text-decoration: none;
+
+    width: 150px;
+    height: 34px;
+    top: 4px;
+    left: -14vh;
   }
 
   a {
     margin-left: 14vh;
+  }
+}
+
+@media screen and (max-width: 388px) {
+  label {
+    color: #FFF;
+    font-size: 13px;
+  }
+
+  label {
+    margin-left: 51px;
+  }
+
+  #campo {
+    height: 18px;
+    width: 31vh;
+    margin-left: 6px;
+  }
+
+  #second1 {
+    width: 102px;
+    height: 28px;
+    top: 409px;
+    left: 21vh;
+  }
+
+  #second2 {
+    width: 102px;
+    height: 28px;
+    top: 373px;
+    left: 21vh;
+  }
+
+  #second1 a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 10px;
+    top: 4px;
+    left: -18vh;
+  }
+  
+  #second2 a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 10px;
+    top: 2px;
+    left: -18vh;
+  }
+  
+  .fox a {
+    margin-left: 125px;
+    font-size: 13px;
   }
 }
 
@@ -209,7 +303,21 @@ p {
 }
 
   p {
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 28px;
+  }
+}
+
+@media screen and (max-width: 388px) {
+  #log {
+    width: 151px;
+    height: 31px;
+    margin-top: 78px;
+    margin-left: 8px;
+}
+
+  p {
+    font-size: 9px;
+    margin-top: 88px;
   }
 }

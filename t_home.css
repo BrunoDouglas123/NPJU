@@ -52,6 +52,11 @@ body {
         top: 14px;
     }
 
+    #campo::placeholder {
+        color:#000000;
+        margin-top: 6px;
+    }
+
     #lupa {
         width: 28px;
         height: 31px;
@@ -83,15 +88,14 @@ address {
     color: #FFFFFF;
     width: 242px;
     height: 21px;
-    left: 24px;
-    top: 240px;
+    left: 84px;
+    top: 230px;
 
     font-family: 'Ovo';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 28px;
-    text-align: center;
 }
 
 address span a {
@@ -147,9 +151,10 @@ address span a {
     }
 
     address {
-        font-size: 11px;
+        font-size: 14px;
         margin-top: -20px;
         margin-left: 0px;
+        left: 84px;
     }
 
     .user {
@@ -159,14 +164,14 @@ address span a {
         width: 242px;
         height: 21px;
         left: -71px;
-        top: -60px;
+        top: -31px;
     }
 
     #icone {
         width: 61px;
         height: 61px;
-        margin-top: 10px;
-        margin-left: 3px;
+        margin-top: -11px;
+        margin-left: -8px;
     }
 
     #second1 {
@@ -202,8 +207,9 @@ address span a {
 
 @media screen and (max-width: 428px) {
     #fundo {
-      flex: 50%;
-      max-width: 50%;
+        flex: 50%;
+        margin-left: -1%;
+        max-width: 81%;    
     }
 }
 
@@ -250,15 +256,15 @@ p {
 }
 
 @media screen and (max-width: 428px) {
-  #log {
-    width: 99px;
-    height: 36px;
-    margin-top: 13px;
+#log {
+    width: 81px;
+    height: 31px;
+    margin-top: 78px;
     margin-left: 8px;
 }
-
-  p {
-    font-size: 10px;
-    margin-top: 28px;
-  }
+    
+p {
+    font-size: 9px;
+    margin-top: 88px;
+}
 }
