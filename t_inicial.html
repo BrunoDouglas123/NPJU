@@ -17,29 +17,33 @@
     </header><br/>
 
     <div class="imagem">
-        <img src="./img/Logo.png" alt="">
+        <img src="./img/Logo.png" alt="#">
     </div><br/>
 
     <div class="formulario">
         <form>
             <div>
-                <label>LOGIN: &nbsp;&ensp;</label>
+                <label>LOGIN: &nbsp;</label>
                 <input id="campo" type="email"  placeholder="Digite seu Email...">
                 <small></small>
             </div><br/>
 
-            <div>
-                <label>SENHA: &nbsp;&nbsp;</label>
+            <div class="fox">
+                <label>SENHA: &nbsp;</label>
                 <input id="campo" type="password" placeholder="Digite sua Senha..."><br/>
                 <small></small>
-                <a href="#">Recuperar Senha</a>
+                <a href="#" id="rc">Recuperar Senha</a> 
             </div>
             <br/><br/>
 
             <div class="check">
                 <div class="checki">
-                    <input id="second1" type="submit" value="CADASTRAR">
-                    <input id="second2" type="submit" value="LOGIN">
+                    <button id="second1" type="submit">
+                       <a href="t_cadastro.html">CADASTRAR</a>
+                    </button>
+                    <button id="second2" type="submit">
+                        <a id="a" href="t_home.html">LOGIN</a>
+                    </button>
                 </div>
             </div>
         </form>

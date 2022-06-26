@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ovo&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 body {
     background: #2F3032;
@@ -8,6 +9,8 @@ body {
 
 /*Cabeçalho*/
 #np {
+    font-family: 'roboto';
+    font-weight: 700;
     display: flex;
     font-size: 50px;
     justify-content: center;
@@ -23,10 +26,9 @@ body {
   }
 }
 
-@media screen and (max-width: 598px) {
-  img {
-    flex: 50%;
-    max-width: 50%;
+@media screen and (max-width: 388px) {
+  #np {
+    font-size: 20px;
   }
 }
 
@@ -37,8 +39,15 @@ body {
   margin-top: -20px;
 }
 
-img {
-  width: 290px;
+#fundo {
+  width: 390px;
+}
+
+@media screen and (max-width: 598px) {
+  img {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
 /*Conteudo do Formulario*/
@@ -51,6 +60,8 @@ img {
 }
 
 label {
+  font-family: 'roboto';
+  font-weight: 700;
   color: #FFF;
   font-size: 18px;
 }
@@ -65,11 +76,13 @@ input {
 }
 
 #campo {
-  width: 45vh;
+  width: 65vh;
   height: 4vh;
+
+  margin-left: 20px;
 }
 
-#campo::placeholder {
+#campo::placeholder after{
   color:#000000;
   position: absolute;
   font-weight: bold;
@@ -89,12 +102,13 @@ input {
 }
 
 #second1 {
-  font-family: "Ovo";
+  font-family: "Roboto";
   position: absolute;
   width: 142px;
   height: 35px;
   left: 96vh;
-  top: 648px;
+  top: 898px;
+  font-size: 20px;
   
   color: #FFF;
   background: #2F3032;
@@ -103,12 +117,12 @@ input {
 }
 
 #second2 {
-  font-family: "Ovo";
+  font-family: "Roboto";
   position: absolute;
   width: 142px;
   height: 35px;
   left: 96vh;
-  top: 696px;
+  top: 848px;
   
   color: #FFF;
   background: #2F3032;
@@ -116,11 +130,29 @@ input {
   border-radius: 28px;
 }
 
+#second1 a {
+  color: #FFF;
+  text-decoration: none;
+  right: 15px;
+  bottom:  5px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#second2 a {
+  color: #FFF;
+  text-decoration: none;
+  right: 40px;
+  bottom: 5px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
 a {
   color: #8699BE;
   position: absolute;
   margin-top: 1vh;
-  margin-left: 13vh;
+  margin-left: 14vh;
 }
 
 @media screen and (max-width: 598px) {
@@ -142,15 +174,91 @@ a {
   #second1 {
     width: 150px;
     height: 34px;
-    top: 502px;
-    left: 25vh;
+    top: 518px;
+    left: 26vh;
   }
 
   #second2 {
     width: 150px;
     height: 34px;
-    top: 453px;
-    left: 25vh;
+    top: 473px;
+    left: 26vh;
+  }
+
+  #second1 a {
+    color: #FFF;
+    text-decoration: none;
+
+    width: 150px;
+    height: 34px;
+    top: 4px;
+    left: -14vh;
+  }
+  
+  #second2 a {
+    color: #FFF;
+    text-decoration: none;
+
+    width: 150px;
+    height: 34px;
+    top: 4px;
+    left: -14vh;
+  }
+
+  a {
+    margin-left: 14vh;
+  }
+}
+
+@media screen and (max-width: 388px) {
+  label {
+    color: #FFF;
+    font-size: 13px;
+  }
+
+  label {
+    margin-left: 51px;
+  }
+
+  #campo {
+    height: 18px;
+    width: 31vh;
+    margin-left: 6px;
+  }
+
+  #second1 {
+    width: 102px;
+    height: 28px;
+    top: 409px;
+    left: 21vh;
+  }
+
+  #second2 {
+    width: 102px;
+    height: 28px;
+    top: 373px;
+    left: 21vh;
+  }
+
+  #second1 a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 10px;
+    top: 4px;
+    left: -18vh;
+  }
+  
+  #second2 a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 10px;
+    top: 2px;
+    left: -18vh;
+  }
+  
+  .fox a {
+    margin-left: 125px;
+    font-size: 13px;
   }
 }
 
@@ -189,7 +297,7 @@ p {
     position: absolute;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 15px;
     line-height: 28px;
     margin-top: 30px;
@@ -201,11 +309,26 @@ p {
     width: 186px;
     height: 36px;
     margin-top: 13px;
-    margin-left: 20px;
+    margin-left: 8px;
 }
 
   p {
-    font-size: 11px;
+    font-size: 10px;
     margin-top: 28px;
   }
 }
+
+@media screen and (max-width: 388px) {
+  #log {
+    width: 151px;
+    height: 31px;
+    margin-top: 78px;
+    margin-left: 8px;
+}
+
+  p {
+    font-size: 9px;
+    margin-top: 88px;
+  }
+}
+
