@@ -1,39 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Ovo&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-body {
-    background: #2F3032;
+body, html {
+
+    background: rgba(0, 0, 0, 0.2) url(./img/direito.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
     padding: 0;
     margin: 0;
-}
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 
+}
 /*Cabeçalho*/
 #np {
-    display: flex;
-    font-size: 50px;
-    justify-content: center;
-    color: #FFF;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  text-decoration: underline overline;
+
 }
 
 @media screen and (max-width: 598px) {
-  #np {
-    color: #FFF;
-    display: flex;
-    justify-content: center;
-    font-size: 28px;
-  }
+#np {
+  color: #FFF;
+  text-align: center;
+  font-size: 28px;
+}
 }
 
 @media screen and (max-width: 388px) {
-  #np {
-    font-size: 20px;
-  }
+#np {
+  text-align: center;
+  font-size: 20px;
+}
 }
 
 /*Imagem de Fundo*/
 .imagem {
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin-top: -20px;
+}
+
+.imagem-logo{
+  display: flex;
+  width: 120px;
 }
 
 #fundo {
@@ -48,26 +64,57 @@ body {
 }
 
 /*Conteudo do Formulario*/
+form{
+  width: fit-content;
+}
+
 .formulario {
   display: flex;
+  width: fit-content;
   justify-content: center;
+  border-radius: 15px;
+  box-shadow: 50px 50px 70px rgba(1, 0, 0, 0.9);
 
-  margin-top: 10px;
-  margin-left: -90px;
+  padding-top: 4vh;
+  padding-left: 0;
+  padding-right: 1vw;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 label {
-  color: #FFF;
+  position: absolute;
+  color: #212325;
+  font-family: 'roboto';
+  padding-left: 40px;
+  padding-top: 20px;
   font-size: 18px;
 }
 
 input {
-  border: 1px solid #000000;
-  border-radius: 24px;
-  margin-top: 5px;
-
-  width: 340px;
+  border: 1px solid #9aaec8c3;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
   height: 4vh;
+  padding: 14px 45px;
+  font-size: 14px;
+  transition: 500ms ease-in-out;
+}
+
+input::placeholder{
+  color: #958e8edc;
+  transition: 400ms ease-in-out;
+}
+
+input:hover{
+  border: 1px solid #212325;
+  transition: 400ms ease-in-out;
+}
+
+input:hover::placeholder{
+  color: #8a8a8a;
 }
 
 #campo {
@@ -85,72 +132,116 @@ input {
   margin-left: 6px;
 }
 
-.check {
-  display: flex;
-  justify-content: center;
-}
-
 .checki {
   display: flex;
+  position: relative;
+  top: -50px;
+  left: 27.7vw;
   justify-content: center;
   flex-direction: column;
 }
 
-#second1 {
-  font-family: "Ovo";
-  position: absolute;
-  width: 142px;
-  height: 35px;
-  left: 96vh;
-  top: 898px;
-  
-  color: #FFF;
-  background: #2F3032;
-  border: 1px solid #FFFFFF;
-  border-radius: 28px;
-}
-
-#second2 {
-  font-family: "Ovo";
-  position: absolute;
-  width: 142px;
-  height: 35px;
-  left: 96vh;
-  top: 848px;
-  
-  color: #FFF;
-  background: #2F3032;
-  border: 1px solid #FFFFFF;
-  border-radius: 28px;
-}
-
-#second1 a {
-  color: #FFF;
-  text-decoration: none;
-  left: -68px;
-  top: 4px;
-}
-
-#second2 a {
-  color: #FFF;
-  text-decoration: none;
-  left: -52px;
-  top: 4px;
-}
-
 a {
-  color: #8699BE;
+  color: #3f51b5;
+  position: absolute;
+  margin-top: 2vh;
+  margin-left: 2vh;
+}
+
+.button {
+  position: relative;
+  font-family: "Roboto";
+  font-size: 20px;
+  position: fixed;
+  width: 180px;
+  height: 45px;
+  margin-top: 5vw;
+  margin-left: -2vw;
+
+  color: #FFF;
+  outline: none;
+  cursor: pointer;
+  background: #2F3032;
+  border: 1px solid #FFFFFF;
+  border-radius: 15px;
+}
+
+.button 
+  #button_text {
+  margin-top: -12px;
+  margin-left: -21px;
+}
+
+.button #button_text {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.button:active {
+  background: #2F3032;
+}
+
+.button__text {
+  font: bold 20px "Quicksand", san-serif;
+  color: #ffffff;
+  transition: all 1s;
+}
+
+.button--loading .button__text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.button--loading::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 4px solid transparent;
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(1turn);
+  }
+
+  to {
+    transform: rotate(3turn);
+  }
+}
+
+.fox{
+  display: block;
+}
+
+.fox a{
+  color: #12236e;
   position: absolute;
   margin-top: 1vh;
-  margin-left: 14vh;
+}
+
+.senha-cadastro{
+  width: 16vw;
+}
+
+.senha-cadastro a{
+  display: block;
+  position: relative;
+  left: 10px;
 }
 
 @media screen and (max-width: 598px) {
   .formulario {
     display: flex;
     justify-content: center;
-
-    margin-left: -40px;
   }
 
   label {
@@ -161,37 +252,30 @@ a {
     width: 40vh;
   }
 
-  #second1 {
-    width: 150px;
-    height: 34px;
-    top: 518px;
-    left: 26vh;
+  .button 
+  #button_text {
+    margin-top: 8px;
+    margin-left: 16vw;
   }
 
-  #second2 {
-    width: 150px;
-    height: 34px;
-    top: 473px;
-    left: 26vh;
+  .button {
+    margin-top: 5vw;
+    margin-left: 11vw;
+    width: 148px;
+    height: 41px;
   }
 
-  #second1 a {
-    color: #FFF;
-    text-decoration: none;
-
-    width: 150px;
-    height: 34px;
-    top: 4px;
-    left: -14vh;
+  .senha-cadastro{
+    width: 13vw;
   }
   
-  #second2 a {
+  .button a {
     color: #FFF;
     text-decoration: none;
 
     width: 150px;
     height: 34px;
-    top: 4px;
+    top: 0px;
     left: -14vh;
   }
 
@@ -216,34 +300,21 @@ a {
     margin-left: 6px;
   }
 
-  #second1 {
+  .button {
+    border-radius: 15px;
     width: 102px;
     height: 28px;
-    top: 409px;
-    left: 21vh;
-  }
-
-  #second2 {
-    width: 102px;
-    height: 28px;
-    top: 373px;
-    left: 21vh;
-  }
-
-  #second1 a {
-    color: #FFF;
-    text-decoration: none;
-    font-size: 10px;
-    top: 4px;
-    left: -18vh;
+    top: 230px;
+    left: 28vh;
   }
   
-  #second2 a {
+  .button #button_text {
     color: #FFF;
     text-decoration: none;
-    font-size: 10px;
-    top: 2px;
-    left: -18vh;
+    width: 102px;
+    height: 28px;
+    top: -2px;
+    left: -54px;
   }
   
   .fox a {
@@ -253,21 +324,27 @@ a {
 }
 
 /*Conteudo do Footer*/
-.footer-containt {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #2F3032;
-    color: white;
-    text-align: center;
-
-    margin-top: 15vh;
+footer{
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 5vh;
+  color: white;
+  text-align: center;
+  justify-content: space-around;
+  align-items: end; 
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
 }
 
 .loguni {
     position: absolute;
-    display: flex;
-    justify-content: flex;
+    left: 0px;
+    justify-content: left;
 }
 
 #log {
@@ -284,10 +361,10 @@ a {
 }
 
 p {
-    position: absolute;
+    position: relative;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 15px;
     line-height: 28px;
     margin-top: 30px;
@@ -299,11 +376,11 @@ p {
     width: 186px;
     height: 36px;
     margin-top: 13px;
-    margin-left: 8px;
+    margin-left: -23px;
 }
 
   p {
-    font-size: 10px;
+    font-size: 11px;
     margin-top: 28px;
   }
 }
@@ -321,3 +398,4 @@ p {
     margin-top: 88px;
   }
 }
+
