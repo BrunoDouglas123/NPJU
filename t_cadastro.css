@@ -105,6 +105,8 @@ body {
     box-shadow: 0 0 0 0;
     outline: 0;
     font-family: 'Roboto';
+    border-style: solid;
+    border-color: #FFF;
     font-weight: 400;
     font-size: 20px;
     text-align: center;
@@ -117,6 +119,8 @@ body {
     box-shadow: 0 0 0 0;
     outline: 0;
     font-family: 'Roboto';
+    border-style: solid;
+    border-color: #FFF;
     font-weight: 400;
     font-size: 20px;
     text-align: center;
@@ -127,6 +131,8 @@ body {
     width: 13vw; height: 5vh;
     border: 2px outset ;
     border-radius: 5px;
+    border-style: solid;
+    border-color: #FFF;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 20px;
@@ -142,6 +148,8 @@ body {
     position: fixed; bottom: 100px;
     width: 13vw; height: 5vh;
     border: 2px outset ;
+    border-style: solid;
+    border-color: #2F3032;
     border-radius: 25px;
     cursor: pointer;
     font-family: 'Roboto';
