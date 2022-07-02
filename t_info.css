@@ -12,8 +12,9 @@ body {
     position: fixed;
     width: 100vw; height: 10vh;
     padding-left: 100px;
-    font-family: 'Roboto';
+    font-family: 'Cinzel', serif;
     font-weight: 400;
+    text-decoration: underline overline;
     text-align: center;
     font-size: 30px;
     color: white;
@@ -85,7 +86,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-top: 30px;
-    width: 80vw; height: 7vh;
+    width: 80vw; height: 6vh;
     border-radius: 5px;
     background: #2F3032;
     z-index: 2;
@@ -115,7 +116,7 @@ body {
 
 .inputesq {
     position: absolute;
-    width: 50vw; height: 4vh;
+    width: 50vw; height: 3.5vh;
     border-radius: 20px;
     box-shadow: 0 0 0 0;
     outline: 0;
@@ -124,7 +125,6 @@ body {
     border: #FFF;
     font-weight: 400;
     font-size: 20px;
-    text-align: center;
     margin-left: 150px;
 }
 
@@ -184,6 +184,8 @@ body {
     font-weight: 400;
     font-size: 20px;
     text-align: center;
+    border-style: solid;
+    border: #2F3032;
     background: #2F3032;
     color: white;
 }
@@ -203,6 +205,26 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+/* Tabela de Documentos */
+table {
+    margin-top: -40px;
+}
+
+th td {
+    padding: 0;
+}
+
+th {
+    font-family: 'Roboto';
+    margin-top: -40px;
+    padding: 61px;
+}
+
+td {
+    font-family: 'Roboto';
+    padding-left: 71px;
 }
 
 @media screen and (max-width: 1037px) {
