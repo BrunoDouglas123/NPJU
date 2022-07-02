@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ovo&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
 
 body, html {
 
-    background: rgba(0, 0, 0, 0.2) url(./img/direito.jpg);
+    background: rgba(0, 0, 0, 0.4) url(./img/direito.jpg);
     background-size: cover;
     background-blend-mode: darken;
     padding: 0;
@@ -14,30 +15,42 @@ body, html {
 
 }
 /*Cabeçalho*/
+
+nav{
+  width: 100%;
+  text-align: center;
+  
+}
+
+
 #np {
-  font-family: 'Cinzel', serif;
-  font-weight: 700;
-  display: flex;
-  font-size: 50px;
-  justify-content: center;
-  color: rgb(255, 255, 255);
-  text-decoration: underline overline;
+    width: 80%;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-decoration: underline overline;
+    margin-inline: auto;
+    padding-top: 0.5rem;
 
 }
+
 
 @media screen and (max-width: 598px) {
-#np {
-  color: #FFF;
-  text-align: center;
-  font-size: 28px;
-}
+  #np {
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 388px) {
-#np {
-  text-align: center;
-  font-size: 20px;
-}
+  #np {
+    font-size: 20px;
+  }
 }
 
 /*Imagem de Fundo*/
@@ -56,6 +69,8 @@ body, html {
   width: 390px;
 }
 
+
+
 @media screen and (max-width: 598px) {
   img {
     flex: 50%;
@@ -64,32 +79,43 @@ body, html {
 }
 
 /*Conteudo do Formulario*/
+
 form{
-  width: fit-content;
+  width: 95%;
+  padding-bottom: 1.5rem;
 }
 
 .formulario {
   display: flex;
-  width: fit-content;
+  width: 50%;
   justify-content: center;
-  border-radius: 15px;
+  border-radius: 5px;
+  background-color: #22222294;
   box-shadow: 50px 50px 70px rgba(1, 0, 0, 0.9);
 
-  padding-top: 4vh;
-  padding-left: 0;
-  padding-right: 1vw;
-  margin: auto;
+  padding-top: 2rem;
+  
+ 
+  margin-inline: auto;
+  margin-block: 5rem;
   align-items: center;
   justify-content: center;
 }
 
+
 label {
-  position: absolute;
-  color: #212325;
+  position: relative;
+  color: #ffffff;
   font-family: 'roboto';
-  padding-left: 40px;
-  padding-top: 20px;
   font-size: 18px;
+}
+
+#verSenha{
+  position: relative;
+  top: -2.5rem;
+  right: .4rem;
+  color: black;
+  float: right;
 }
 
 input {
@@ -98,10 +124,11 @@ input {
   outline: none;
   width: 100%;
   height: 4vh;
-  padding: 14px 45px;
+  padding: 14px 0;
   font-size: 14px;
   transition: 500ms ease-in-out;
 }
+
 
 input::placeholder{
   color: #958e8edc;
@@ -117,14 +144,16 @@ input:hover::placeholder{
   color: #8a8a8a;
 }
 
-#campo {
-  width: 65vh;
-  height: 4vh;
-
-  margin-left: 20px;
+input:focus::placeholder{
+  color: #242324;
 }
 
-#campo::placeholder after{
+.campo {
+  width: 100%;
+  height: 4vh;
+}
+
+.campo::placeholder after{
   color:#000000;
   position: absolute;
   font-weight: bold;
@@ -134,142 +163,136 @@ input:hover::placeholder{
 
 .checki {
   display: flex;
-  position: relative;
-  top: -50px;
-  left: 27.7vw;
-  justify-content: center;
-  flex-direction: column;
+  width: 33%;
+  margin-top: 0.2rem;
 }
 
-a {
-  color: #3f51b5;
-  position: absolute;
-  margin-top: 2vh;
-  margin-left: 2vh;
-}
-
-.button {
-  position: relative;
+#second1 {
   font-family: "Roboto";
+  position: relative;
+  width: 142px;
+  height: 35px;
+  margin-top: 2vw;
+  
   font-size: 20px;
-  position: fixed;
-  width: 180px;
+  
+  color: #FFF;
+  border: none;
+ 
+}
+
+#second2 {
+  font-family: "Roboto";
+  position: relative;
+  width: 100%;
   height: 45px;
-  margin-top: 5vw;
-  margin-left: -2vw;
+  margin-top: .2rem;
+  margin-left: .6rem;
 
   color: #FFF;
-  outline: none;
-  cursor: pointer;
   background: #2F3032;
   border: 1px solid #FFFFFF;
   border-radius: 15px;
+
+  transition: 400ms ease-in-out;
 }
 
-.button 
-  #button_text {
-  margin-top: -12px;
-  margin-left: -21px;
+#second2:hover{
+  border: 1px solid black;
 }
 
-.button #button_text {
+#second1 a {
   color: #FFF;
+  text-decoration: none;
+  right: 15px;
+  bottom:  5px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#second2 a {
+  color: #FFF;
+  text-decoration: none;
+  right: 60px;
+  bottom: 9px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+a {
+  color: #b6bde1;
+  position: relative;
+  margin-top: 2vh;
+  transition: 400ms ease-in-out;
   text-decoration: none;
 }
 
-.button:active {
-  background: #2F3032;
-}
-
-.button__text {
-  font: bold 20px "Quicksand", san-serif;
-  color: #ffffff;
-  transition: all 1s;
-}
-
-.button--loading .button__text {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.button--loading::after {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  border: 4px solid transparent;
-  border-top-color: #ffffff;
-  border-radius: 50%;
-  animation: button-loading-spinner 1s ease infinite;
-}
-
-@keyframes button-loading-spinner {
-  from {
-    transform: rotate(1turn);
-  }
-
-  to {
-    transform: rotate(3turn);
-  }
-}
-
 .fox{
-  display: block;
+  width: 100%;
+  display: flex;
 }
 
 .fox a{
-  color: #12236e;
+  color: #fdfdff;
   position: absolute;
   margin-top: 1vh;
+  transition: 200ms ease-in-out;
+}
+
+.fox a:hover{
+  color: rgb(61, 61, 237);
 }
 
 .senha-cadastro{
-  width: 16vw;
+  display: relative;
+  width: 33.33%;
 }
 
 .senha-cadastro a{
   display: block;
   position: relative;
-  left: 10px;
+
 }
 
 @media screen and (max-width: 598px) {
   .formulario {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    padding-top:0;
   }
 
   label {
     font-size: 13px;
   }
 
-  #campo {
-    width: 40vh;
+  .campo {
+    width: 100%;
   }
 
-  .button 
-  #button_text {
-    margin-top: 8px;
-    margin-left: 16vw;
+  #second1 {
+    width: 150px;
+    height: 34px;
+    top: 4vh;
+   
   }
 
-  .button {
-    margin-top: 5vw;
-    margin-left: 11vw;
-    width: 148px;
-    height: 41px;
+  #second2 {
+    width: 100%;
+    height: 34px;
+    top: 4vh;
   }
 
-  .senha-cadastro{
-    width: 13vw;
+
+  #second1 a {
+    color: #FFF;
+    text-decoration: none;
+
+    width: 150px;
+    height: 34px;
+    top: 0px;
+    left: -14vh;
   }
   
-  .button a {
+  #second2 a {
     color: #FFF;
     text-decoration: none;
 
@@ -280,7 +303,14 @@ a {
   }
 
   a {
-    margin-left: 14vh;
+    width: 100%;
+    margin-left: 0.5rem;
+  }
+
+  .checki{
+    width: 100%;
+    justify-content: right;
+    margin-top: -2rem;
   }
 }
 
@@ -290,36 +320,58 @@ a {
     font-size: 13px;
   }
 
-  label {
-    margin-left: 51px;
-  }
+ 
 
-  #campo {
+  .campo {
     height: 18px;
-    width: 31vh;
-    margin-left: 6px;
+    width: 100%;
   }
 
-  .button {
-    border-radius: 15px;
+  #second1 {
     width: 102px;
     height: 28px;
-    top: 230px;
-    left: 28vh;
+    
+    left: 21vh;
   }
-  
-  .button #button_text {
+
+  #second2 {
+    width: 102px;
+    height: 28px;
+    
+    left: 21vh;
+  }
+
+  #second1 a {
     color: #FFF;
     text-decoration: none;
-    width: 102px;
-    height: 28px;
-    top: -2px;
-    left: -54px;
+    font-size: 10px;
+    top: 4px;
+    left: -18vh;
+  }
+  
+  #second2 a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 10px;
+    top: 2px;
+    left: -18vh;
   }
   
   .fox a {
-    margin-left: 125px;
+    width: 100%;
     font-size: 13px;
+  }
+
+  a {
+    margin-left: 0.5rem;
+  }
+
+  .direito{
+    margin: 0px;
+  }
+
+  p{
+    margin: 0px;
   }
 }
 
@@ -329,11 +381,10 @@ footer{
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
   height: 5vh;
   color: white;
-  text-align: center;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: end; 
   font-family: 'Roboto';
   font-weight: 400;
@@ -341,8 +392,10 @@ footer{
   color: white;
 }
 
+
 .loguni {
-    position: absolute;
+    position: relative;
+    width: 33.33%;
     left: 0px;
     justify-content: left;
 }
@@ -351,8 +404,21 @@ footer{
     width: 171px;
     height: 66px;
 
-    margin-top: -16px;
+    
     margin-left: 7px;
+}
+
+.div-logo{
+  display: flex;
+  position: relative;
+  width: 33.33%;
+  justify-content: right;
+}
+
+.logo{
+  display: flex;
+  text-align: end;
+  width: 8rem;
 }
 
 .direito {
@@ -365,10 +431,8 @@ p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 28px;
-    margin-top: 30px;
-    margin-left: 30px;
+    font-size: 12px;
+   
 }
 
 @media screen and (max-width: 598px) {
@@ -376,18 +440,23 @@ p {
     width: 186px;
     height: 36px;
     margin-top: 13px;
-    margin-left: -23px;
 }
 
   p {
-    font-size: 11px;
+    font-size: 7px;
     margin-top: 28px;
+  }
+
+ 
+
+  .senha-cadastro{
+    width: 20rem;
   }
 }
 
 @media screen and (max-width: 388px) {
   #log {
-    width: 151px;
+    max-width: 90px;
     height: 31px;
     margin-top: 78px;
     margin-left: 8px;
@@ -399,3 +468,12 @@ p {
   }
 }
 
+/*VALIDAÇÕES*/
+span{
+  width: 33.33%;
+  position: relative;
+  top: 0;
+  color: red;
+  font-style: italic;
+  font-size: 20px;
+}
