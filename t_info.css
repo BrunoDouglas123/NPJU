@@ -224,15 +224,24 @@ td, th {
     text-align: center;
 }
 
-td, #ali {
+th {
+    padding-left: 50px;
+}
+
+td, #ad {
     color: blue;
     margin-left: 31px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 tr {
     margin-left: 10px;
+    font-weight: bold;
+}
+
+th, #td {
+    margin-left: 190px;
     font-weight: bold;
 }
 
