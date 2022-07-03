@@ -224,8 +224,16 @@ td, th {
     text-align: center;
 }
 
-th {
-    padding-left: 50px;
+th, #ter1 {
+    padding-left: 148px;
+}
+
+th, #ter2 {
+    padding-left: 64px;
+}
+
+th, #ter3 {
+    padding-left: 189px;
 }
 
 td, #ad {
@@ -240,17 +248,32 @@ tr {
     font-weight: bold;
 }
 
-th, #td {
-    margin-left: 190px;
-    font-weight: bold;
-}
-
 .custom-table {
 min-width: 900px; }
-.custom-table thead tr,
+.custom-table thead tr, #ter1
 .custom-table thead th {
+  position: absolute;
+  margin-left: 100px;
   border-top: none;
-  border-bottom: none !important; }
+  border-bottom: none;
+}
+
+.custom-table thead tr, #ter2
+.custom-table thead th {
+  position: absolute;
+  margin-left: 190px;
+  border-top: none;
+  border-bottom: none;
+}
+
+.custom-table thead tr, #ter3
+.custom-table thead th {
+  position: absolute;
+  margin-left: -69px;
+  border-top: none;
+  border-bottom: none;
+}
+
 .custom-table tbody th, 
 .custom-table tbody td {
   color: #777;
