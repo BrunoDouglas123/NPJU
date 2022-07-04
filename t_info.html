@@ -12,18 +12,14 @@
 
 <body>
   <header>
-    <h1 class="cabecalho">Cadastro de Administradores</h1>
+    <h1 class="cabecalho">Eventos</h1>
   </header>
 
   <div class="container">
     <div class="lateral-esq">
-      <a href="index.html"><img class="logo" src="./img/Logo.png" alt=""></a>
-      <button class="botao">
-        <a class="a" href="index.html">Página Inicial</a>
-      </button>
-      <br>
-      <button class="button">
-        <a class="a" href="index.html">Cadastrar</a>
+      <a href="index.html"><img class="logo" src="./img/Logo-definitiva2.png" alt=""></a>
+      <button id="botaoIndex" class="botao" type="button" onclick="voltarIndex()">
+        PÁGINA INICIAL
       </button>
     </div>
 
@@ -32,22 +28,27 @@
       <div class="areabranca">
         <div class="fundoretangulo">
           <p class="fontreabranca">Processo</p>
-          <input class="inputesq" type="text" placeholder="Digite o Processo">
+          <input class="inputesq" type="text" placeholder="00012345520104047010">
         </div>
 
         <div class="fundoretangulo">
           <p class="fontreabranca">Cliente</p>
-          <input class="inputesq" type="number" placeholder="Digite o Cliente">
+          <input class="inputesq" type="number" placeholder="Maria Silva">
         </div>
 
         <div class="fundoretangulo">
           <p class="fontreabranca">Parte Contraria</p>
-          <input class="inputesq" type="email" placeholder="Digite a Contra Parte">
+          <input class="inputesq" type="email" placeholder="Roberto Souza">
         </div>
 
         <div class="fundoretangulo">
           <p class="fonteareabranca">Juiz Responsável</p>
-          <input class="inputesq" type="tel" placeholder="Digite o Juiz">
+          <input class="inputesq" type="tel" placeholder="Ana Maria">
+        </div>
+
+        <div class="fundoretangulo">
+          <p class="fonteareabranca">Juizado</p>
+          <input class="inputesq" type="tel" placeholder="Vara cível">
         </div>
 
         <section>
@@ -82,8 +83,8 @@
 
                 <tr>
                   <td><a href="" id="ad">Adicionar +</a></td>
-                  <td>21/04/2019</td>
-                  <td>Audiência 77839994759 adiada para data 01/05/2019.</td>
+                  <td>--</td>
+                  <td>--</td>
                 </tr>
 
               </tbody>
@@ -91,7 +92,7 @@
           </div>
         </section>
 
-        <input class="botao2" type="submit" value="Concluído">
+        <button id="botaoIndex" class="botao2" onclick="voltarIndex()">CONCLUIR</button>
       </div>
 
     </div>
@@ -101,6 +102,7 @@
     <p class="Direitosaut">Crafted by NPJU team © COPYRIGHT 2022</p>
 
   </footer>
+  <script src="t_info.js"></script>
 </body>
 
 </html>
