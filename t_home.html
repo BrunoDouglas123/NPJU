@@ -13,55 +13,58 @@
     <header>
         <nav>
             <div class="busca">
-                <input type="text" id="campo" placeholder="Buscar..." >
-                <button id="botao-buscar" onclick="buscar()" >BUSCAR</button>
-            </div>
-        </nav>
-    </header>
-
-    <header>
-        <nav>
-            <div class="user">
-                <div class="linha">
-                    <img src="./img/Icone.png" id="icone" alt="">
-                    <h2>Conta : Administrador</h2>
-                    <h2>Id : 987655 </h2>
-                    <button id="botao-logout"  onclick="logout()">
-                        Log out
-                    </button>                      
-                </div>
-
-                <div class="checki">
-                    <button  id="second1 "class="second1" onclick="cadastrarCliente()">
-                       CADASTRAR
-                    </button>
-
-                     <a class="juris" href="https://www.jusbrasil.com.br/jurisprudencia/" target="_blank" rel="noopener noreferrer">JURISPRUDÊNCIA</a>
-                 
-                     <a class="juris" href="https://www.jusbrasil.com.br/consulta-processual/" target="_blank"  >CONSULTA PROCESSUAL</a>
-                        
-                    
-
-                </div>
+                <a><img src="./img/Search.png" id="lupa" alt=""></a>
+                <input type="text" id="campo" placeholder="Buscar...">
             </div>
         </nav>
     </header><br/>
 
+    <header>
+        <nav>
+            <div class="user">
+                <img src="./img/Icone.png" id="icone" alt="">
+                <address>
+                    <div class="linha">
+                   <span>Conta :</span> Administrador<br>                        
+                    </div>
+                    
+                    <div class="linha">
+                   <span>Id :</span> 987655                        
+                    </div>
 
-    <footer>
-        <div class="loguni">
-            <a href="https://uniamerica.br/" target="_blank"><img src="./img/Uni.png" id="log" alt="Logo Uniamerica" title="Logo Uniamerica"></a>
-        </div>
+                   <span><a href="t_inicial.html">Log out</a></span><br>
+                </address>
 
-        <div class="direito">
-            <p>Crafted by NPJU team © COPYRIGHT 2022</p>
-        </div>
+            <div class="checki">
+                <button id="second1">
+                    <a id="a" href="t_cadastrocliente.html">CADASTRAR</a>
+                </button>
+                <button id="second2">
+                    <a id="a" href="">DOCUMENTOS</a>
+                </button>
+                <button id="second3">
+                    <a id="a" href="">EVENTOS</a>
+                </button>
+            </div>
+            </div>
+        </nav>
+    </header><br/>
 
-        <div class="div-logo">
-            <img class="logo" src="./img/Logo-definitiva2.png" alt="">
-        </div>
-    </footer>
-    <script src="t_home.js"></script>
+    <div class="imagem">
+        <img src="./img/Logo_Fundo.png" id="fundo" alt="#">
+    </div><br/>
+
+    <div class="footer-containt">
+        <footer>
+            <div class="loguni">
+                <img src="./img/Uni.png" id="log" alt="Logo Uniamerica" title="Logo Uniamerica">
+            </div>
+
+            <div class="direito">
+                <p>Crafted by NPJU team © COPYRIGHT 2022</p>
+            </div>
+        </footer>
+    </div>
     
 </body>
 </html>

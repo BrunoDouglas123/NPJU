@@ -21,32 +21,31 @@
 
     <div class="formulario">
         <form>
-
             <div class="input-container">
-                <label id="labelEmail">Email</label>
-                <input class="campo" id="campoEmail" type="email" placeholder="Digite seu Email..." required>
+                <label><i class="fa-solid fa-envelope"></i></label>
 
-                <label id="labelSenha">Senha</label>
-                <input class="campo " id="campoSenha" name="inputName" type="password" placeholder="Digite sua Senha..."
-                    required><br />
+                <input class="campoLogin" id="campo" type="email" placeholder="Digite seu Email...">
 
-                <i id="verSenha" class="fa-solid fa-eye"></i>
-
-            </div>
+            </div><br />
 
             <div class="fox">
-
+                <label><i class="fa-solid fa-lock"></i></label>
+                <input id="campo" type="password" placeholder="Digite sua Senha..."><br />
                 <div class="senha-cadastro">
-                    <a class="a" href="#" id="rc">Recuperar Senha</a>
+                    <a href="#" id="rc">Recuperar Senha</a>
                     <a href="t_cadastro.html">Cadastrar</a>
                 </div>
-                <span id="erro"></span>
+
+
                 <div class="checki">
-                    <button onclick='login()' id="second2" type="button">
-                        Login
+                    <button type="button" class="button" onclick="this.classList.toggle('button--loading')">
+                        <a id="button_text" href="t_home.html">Login</a>
                     </button>
                 </div>
+
             </div>
+            <br /><br />
+
 
         </form>
     </div>
@@ -54,22 +53,15 @@
 
     <footer>
         <div class="loguni">
-            <a href="https://uniamerica.br/" target="_blank"><img src="./img/Uni.png" id="log" alt="Logo Uniamerica"
-                    title="Logo Uniamerica"></a>
+            <img src="./img/Uni.png" id="log" alt="Logo Uniamerica" title="Logo Uniamerica">
         </div>
 
         <div class="direito">
             <p>Crafted by NPJU team © COPYRIGHT 2022</p>
         </div>
-
-        <div class="div-logo">
-            <img class="logo" src="./img/Logo-definitiva2.png" alt="">
-        </div>
-
     </footer>
 
     <script src="https://kit.fontawesome.com/f807b5697b.js" crossorigin="anonymous"></script>
-    <script src="t_login.js"></script>
 </body>
 
 </html>
