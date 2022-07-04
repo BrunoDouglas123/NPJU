@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.4) url(./img/direito.jpg);
+    overflow: hidden;
+}
+
+/*Cabeçalho*/
+.cabecalho {
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    padding-left: 100px;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    text-decoration: underline overline;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.lateral-esq {
+    display: flex;
+    justify-content: center;
+    width: 15vw; height: 100vh;
+}
+.rodape {
+    position: fixed; bottom: 0px;
+    display: flex;
+    width: 100vw; height: 10vh;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+}
+.logouniamerica {
+    position: fixed; left: 20px;
+    width: 200px; height: 75px;
+}
+.logo {
+    width: 10rem; 
+    height: 9rem;
+    margin-top: 1rem;
+}
+.logodefundo {
+    position: fixed;
+    width: 400px; height: 400px;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 20%;
+    z-index: 1;
+}
+.npju {
+    position: fixed; left: 0px; top: 110px;
+    width: 15vw; height: 5vh;
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-align: center;
+    font-size: 40px;
+    color: #f6d55e;
+}
+.container {
+    width: 100vw; height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    
+}
+.areabranca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%; height: 80vh;
+    justify-content: flex-start;
+    align-content: center;
+    background: white;
+}
+
+.fundoretangulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    width: 80vw; height: 7vh;
+    background: #2F3032;
+    z-index: 2;
+}
+.fonteareabranca {
+    width: 120px;
+    padding-left: px;
+    padding-right: 480px;
+    line-height: 19px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+.inputesq {
+    position: absolute;
+    width: 28vw; height: 4vh;
+    border-radius: 20px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 120px;
+}
+
+option{
+    position: absolute;
+    width: 30vw; height: 4vh;
+    border-radius: 20px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 120px;
+}
+.inputdir {
+    position: absolute;
+    width: 30vw; height: 4vh;
+    border-radius: 20px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    background: white;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 49vw;
+}
+.botao {
+    position: fixed;
+    top: 11rem;
+    width: 13vw; 
+    height: 5vh;
+    border: 1px solid #212325 ;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    text-align: center;
+    background: #ffffff;
+    color: black;
+    transition: 400ms ease-in-out;
+}
+
+.botao:hover{
+    background-color: #212325;
+    color: white;
+}
+
+.botao:active {
+    border: 1px outset;
+    width: 12vw; height: 4.5vh;
+    
+}
+.botao2 {
+    position: fixed; bottom: 100px;
+    width: 13vw; height: 5vh;
+    border: 1px solid #212325;
+    border-radius: 10px;
+    cursor: pointer;
+    left: 35rem;
+    
+    font-family: 'Roboto';
+    font-weight: bold;
+    
+    text-align: center;
+    background: #2F3032;
+    transition: 400ms ease-in-out;
+    color: white;
+}
+.botao2:hover {
+    background-color: #ffffff;
+    color: #212325; 
+}
+.Direitosaut {
+    padding-left: 200px;
+}
+.a {
+    text-decoration: none;
+    color: black;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#declaracao{
+    position: fixed;
+    bottom: 100px;
+    width: 13vw; 
+    height: 4.8vh;
+    border: 1px solid #212325;
+    border-radius: 10px;
+    cursor: pointer;
+    left: 50rem;
+    
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+
+    text-align: center;
+    background: #2F3032;
+    transition: 400ms ease-in-out;
+    color: white;
+}
+
+#declaracao:hover{
+    background-color: #ffffff;
+    color: #212325;
+}
