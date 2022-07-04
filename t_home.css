@@ -1,57 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Ovo&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-body {
+body, html {
+    background: rgba(0, 0, 0, 0.4) url(./img/direito.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
     padding: 0;
     margin: 0;
-    background-color: #2F3032;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 /*Cabeçalho*/
-#lupa {
-    position: absolute; left: 50px; top: 0px;
-    width: 40px;
-    height: 40px;
-    padding-top: 2.5vh;
-
-    margin-left: 0px;
-}
 
 .busca {
-    width: 100%; height: 10vh;
+    position: relative;
+    width: 100%; 
+    height: 10vh;
     border: 0px solid red;
     display: flex;
     justify-content: center;
-    
+    flex-direction: column;
 }
 
 #campo {
-    position: absolute; left: 150px; top: 20px;
-    width: 1200px;
+    position: relative;
+    display: block;
+    top: 20px;
+    width: 80%;
     height: 31px;
-    
+
+    padding: 0.5rem;
+    margin-inline: auto;
+
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 28px;
+    border-radius: 10px;
 }
 
-#campo::placeholder {
-    color:#000000;
-    position: absolute;
-    font-weight: bold;
-    margin-top: 8px;
-    margin-left: 6px;
+#botao-buscar{
+    font-family: "Roboto";
+    padding-block: 0.5rem;
+    display: flex;
+    margin-top: 2rem;
+    background: #ffffff;
+    border: 1px solid #272424;
+    border-radius: 15px;
+    position: relative;
+    width: 15%;
+    margin-left: 9%;
+    justify-content: center;
+    transition: 400ms ease-in-out;
 }
+
+#botao-buscar:hover{
+    background-color: #212325;
+    color: white;
+}
+
+input::placeholder{
+    color: #958e8edc;
+    transition: 400ms ease-in-out;
+  }
+  
+  input:hover{
+    border: 1px solid #212325;
+    transition: 400ms ease-in-out;
+  }
+  
+  input:hover::placeholder{
+    color: #8a8a8a;
+  }
+  
+  input:focus::placeholder{
+    color: #242324;
+  }
 
 @media screen and (max-width: 428px) {
     #campo {
         display: flex;
         justify-content: center;
-        position: absolute;
-        width: 268px;
-        height: 26px;
-        left: 41px;
-        top: 14px;
+        position: relative;
+        width: 80%;
     }
 
     #campo::placeholder {
@@ -69,29 +100,34 @@ body {
 }
 
 /*Cabeçalho Lateral*/
-.user {
-    position: absolute;
+
+nav{
     display: flex;
+    width: 100%;
+    justify-content: left;
+}
+
+
+.user {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
     justify-content: flex-start;
-    width: 242px;
-    height: 21px;
-    left: -40px;
-    top: 0;
+    width: 50%;
+    height: 100%;
 }
 
 .user address {
-    display: flex;
+    display: block;
     justify-content: center;
-    flex-direction: column;
 }
 
 address {
-    position: absolute;
+    display: block;
+    position: relative;
     color: #FFFFFF;
     width: 242px;
     height: 21px;
-    left: 84px;
-    top: 230px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -104,54 +140,64 @@ address span a {
     color: white;
 }
 
+.checki{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
 .linha {
-    display:inline;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-block: 5rem;
 }
 
 #icone {
-    position: absolute;
+    display: flex;
     width: 70px;
-    height: 71px;
-    left: 108px;
-    top: 106px;
+    margin-left: 2.4rem;
 }
 
 #second1 {
+    position: relative;
     font-family: "Roboto";
-    position: absolute;
-    width: 120px;
-    height: 26px;
-    top: 290px;
-    left: 12vh;
+    font-weight: bold;
+    width: 6.5rem;
+    padding-block: 0.4rem;
     font-size: 13px;
+    margin-left: 1.4rem;
 
     background: #ffffff;
-    border: 1px solid #FFFFFF;
-    border-radius: 3px;
+    border: 1px solid #212325;
+    border-radius: 10px;
+    transition: 400ms ease-in-out;
   }
-  
+
+
   #second2 {
+    position: relative;
     font-family: "Roboto";
-    position: absolute;
     width: 120px;
-    height: 26px;
-    top: 328px;
-    left: 12vh;
     font-size: 13px;
     
     color: #FFF;
     background: #ffffff;
     border: 1px solid #FFFFFF;
     border-radius: 3px;
+    transition: 400ms ease-in-out;
 }
+
+#second1:hover{
+    background-color: #212325;
+    color: white;
+}
+
 
 #second3 {
+    position: relative;
     font-family: "Roboto";
-    position: absolute;
     width: 120px;
-    height: 26px;
-    top: 366px;
-    left: 12vh;
     font-size: 13px;
     
     color: #FFF;
@@ -160,10 +206,42 @@ address span a {
     border-radius: 3px;
 }
 
+#a{
+    position: relative;
+}
+
+#botao-logout{
+    font-family: "Roboto";
+    padding: 0.2rem;
+    width: 5rem;
+    margin-left: 2rem;
+    border: 1px solid #272424;
+    border-radius: 15px;
+    transition: 400ms ease-in-out;
+}
+
+
+#botao-logout:hover{
+    background-color: #212325;
+    color: white;
+}
+
+h2{
+    display: flex;
+    margin: 0.3rem;
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #ffffff;
+}
 
 @media screen and (max-width: 428px) {
+
+    body{
+        width: 100%;
+    }
+
     nav {
-        width: 20px;
+        width: 100%;
         height: 100%; 
     }
 
@@ -175,27 +253,24 @@ address span a {
     }
 
     .user {
-        position: absolute;
+        width: 100%;
+        position: relative;
         display: flex;
         justify-content: flex-start;
-        width: 242px;
-        height: 21px;
-        left: -71px;
-        top: -31px;
+        
     }
 
     #icone {
         width: 61px;
         height: 61px;
-        margin-top: -11px;
-        margin-left: -8px;
+        margin-inline: auto;
     }
 
     #second1 {
         width: 81px;
         height: 20px;
         top: 266px;
-        left: 104px;
+        margin-inline: auto;
         font-size: 10px;
     }
 
@@ -215,19 +290,37 @@ address span a {
         font-size: 10px;
     }
     
+    .linha{
+        position: relative;
+        width: 100%;
+    }
+    h2{
+        margin-inline: auto;
+    }
+
+    #botao-logout{
+        margin-inline: auto;
+    }
+
+    .div-logo{
+        width: 33%;
+    }
+
+    .logo{
+        display: flex;
+        width: 20%;
+    }
 }
 
 /*Imagem de Fundo*/
 .imagem {
     display: flex;
     justify-content: center;
-    margin-top: 13vh;
 }
 
 #fundo {
-    width: auto;
+    width: 20rem;
     height: auto;
-
     margin-left: -9vh;
 }
 
@@ -240,46 +333,54 @@ address span a {
 }
 
 /*Conteudo do Footer*/
-.footer-containt {
+footer{
+    display: flex;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #2F3032;
+    height: 5vh;
     color: white;
-    text-align: center;
-
-    margin-top: 25vh;
-}
-
-.loguni {
-    position: absolute;
-    display: flex;
-    justify-content: flex;
-}
-
-#log {
-    width: 171px;
-    height: 66px;
-
-    margin-top: -16px;
-    margin-left: 7px;
-}
-
-.direito {
-    display: flex;
-    justify-content: center;
-}
-
-p {
-    position: absolute;
+    justify-content: space-between;
+    align-items: end; 
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 15px;
-    line-height: 28px;
-    margin-top: 30px;
-    margin-left: 30px;
-}
+    color: white;
+  }
+  
+  
+  .loguni {
+      position: relative;
+      width: 33.33%;
+      left: 0px;
+      justify-content: left;
+  }
+  
+  #log {
+      width: 171px;
+      height: 66px;
+      margin-left: 7px;
+  }
+  
+  .div-logo{
+    display: flex;
+    position: relative;
+    width: 33.33%;
+    justify-content: right;
+  }
+  
+  .logo{
+    display: flex;
+    text-align: end;
+    width: 33%;
+  }
+  
+  .direito {
+      display: flex;
+      justify-content: center;
+  }
+
 
 @media screen and (max-width: 428px) {
 #log {
@@ -292,6 +393,7 @@ p {
 p {
     font-size: 9px;
     margin-top: 88px;
+    text-align: center;
 }
 }
 #a {
