@@ -3,17 +3,19 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #2F3032;
+    background: rgba(0, 0, 0, 0.4) url(./img/direito.jpg);
     overflow: hidden;
 }
 
 /*Cabeçalho*/
 .cabecalho {
     position: fixed;
-    width: 100vw; height: 10vh;
+    width: 100vw;
+    height: 10vh;
     padding-left: 100px;
-    font-family: 'Roboto';
+    font-family: 'Cinzel', serif;
     font-weight: 400;
+    text-decoration: underline overline;
     text-align: center;
     font-size: 30px;
     color: white;
@@ -39,9 +41,9 @@ body {
     width: 200px; height: 75px;
 }
 .logo {
-    width: 150px; height: 150px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 10rem; 
+    height: 9rem;
+    margin-top: 1rem;
 }
 .logodefundo {
     position: fixed;
@@ -83,7 +85,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 0.5rem;
     width: 80vw; height: 7vh;
     background: #2F3032;
     z-index: 2;
@@ -127,17 +129,23 @@ body {
     margin-left: 49vw;
 }
 .botao {
-    position: fixed; top: 225px;
-    width: 13vw; height: 5vh;
-    border: 2px outset ;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: #FFF;
+    position: fixed;
+    top: 11rem;
+    width: 13vw; 
+    height: 5vh;
+    border: 1px solid #212325 ;
+    border-radius: 10px;
     font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: bold;
     text-align: center;
+    background: #ffffff;
     color: black;
+    transition: 400ms ease-in-out;
+}
+
+.botao:hover{
+    background-color: #212325;
+    color: white;
 }
 .botao:active {
     border: 1px outset;
@@ -145,24 +153,23 @@ body {
     
 }
 .botao2 {
-    position: fixed; bottom: 100px;
-    width: 13vw; height: 5vh;
-    border: 2px outset ;
-    border-style: solid;
-    border-color: #2F3032;
-    border-radius: 25px;
-    cursor: pointer;
+    position: fixed;
+    top: 39rem;
+    width: 13vw; 
+    height: 5vh;
+    border: 1px solid #212325 ;
+    border-radius: 10px;
     font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: bold;
     text-align: center;
-    background: #2F3032;
-    color: white;
+    background: #212325;
+    color: #ffffff;
+    transition: 400ms ease-in-out;
 }
-.botao2:active {
-    border: 1px outset;
-    width: 12vw; height: 4.5vh;
-    
+
+.botao2:hover{
+    background-color: #ffffff;
+    color: black;
 }
 .Direitosaut {
     padding-left: 200px;

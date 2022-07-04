@@ -16,10 +16,9 @@
 
     <div class="container">
         <div class="lateral-esq">
-            <a href="index.html"><img class="logo" src="./img/Logo.png" alt=""></a>
-            <p class="npju">NPJU</p>
-            <button class="botao">
-                <a class="a" href="t_inicial.html">Página Inicial</a>
+            <a href="index.html"><img class="logo" src="./img/Logo-definitiva2.png" alt=""></a>
+            <button class="botao" id="botao-paraHome" onclick="voltaHome()">
+               PÁGINA INICIAL
             </button>
         </div>
 
@@ -40,21 +39,21 @@
                 </div>
                 <div class="fundoretangulo">
                     <p class="fonteareabranca">Email</p>
-                    <p class="fonteareabranca">Endereço</p>
+                    <p class="fonteareabranca">Senha</p>
                     <input class="inputesq" type="email" placeholder="Digite seu Email">
-                    <input class="inputdir" type="text" placeholder="Digite seu endereço">
+                    <input class="inputdir" type="password" placeholder="Digite sua senha">
                 </div>
                 <div class="fundoretangulo">
-                    <p class="fonteareabranca">Celular</p>
-                    <p class="fonteareabranca">Telefone</p>
-                    <input class="inputesq" type="tel" placeholder="Digite seu Número de Celular">
-                    <input class="inputdir" type="tel" placeholder="Digite seu Número de Telefone">
+                    <p class="fonteareabranca">Confirmar senha</p>
+                    <p class="fonteareabranca">Telefoe</p>
+                    <input class="inputesq" type="password" placeholder="Digite a senha novamente">
+                    <input class="inputdir" type="tel" placeholder="Digite o Número de Telefone">
                 </div>
                 <div class="fundoretangulo">
                     <p class="fonteareabranca">Chave de Acesso</p>
                     <input class="inputesq" type="text" placeholder="Digite a Chave Mestra de Acesso">
                 </div>
-                <input class="botao2" type="submit" value="Concluído">
+                <button id="botaoIndex" class="botao2"  onclick="voltaHome()">CONCLUIR</button>
             </div>
 
         </div>
@@ -62,8 +61,8 @@
     <footer class="rodape">
         <img class="logouniamerica" src="./img/Uni.png" alt="">
         <p class="Direitosaut">Crafted by NPJU team © COPYRIGHT 2022</p>
-
     </footer>
+    <script src="t_cadastro.js"></script>
 </body>
 
 </html>

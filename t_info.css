@@ -40,10 +40,9 @@ body {
     width: 200px; height: 75px;
 }
 .logo {
-    width: 150px; height: 150px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
+    width: 10rem; 
+    height: 9rem;
+    margin-top: 1rem;
 }
 .logodefundo {
     position: fixed;
@@ -149,16 +148,23 @@ body {
     margin-left: 49vw;
 }
 .botao {
-    position: fixed; top: 225px;
-    width: 13vw; height: 5vh;
-    border: 2px outset ;
-    border-radius: 5px;
-    border-style: solid;
+    position: fixed;
+    top: 11rem;
+    width: 13vw; 
+    height: 5vh;
+    border: 1px solid #212325 ;
+    border-radius: 10px;
     font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: bold;
     text-align: center;
+    background: #ffffff;
     color: black;
+    transition: 400ms ease-in-out;
+}
+
+.botao:hover{
+    background-color: #212325;
+    color: white;
 }
 
 .button {
@@ -179,19 +185,24 @@ body {
     
 }
 .botao2 {
-    position: fixed; bottom: 100px;
-    width: 13vw; height: 5vh;
-    border: 2px outset ;
-    border-radius: 25px;
-    cursor: pointer;
+    position: fixed;
+    top: 39rem;
+    width: 13vw; 
+    height: 5vh;
+    border: 1px solid #212325 ;
+    border-radius: 10px;
     font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: bold;
     text-align: center;
-    border-style: solid;
-    border: #2F3032;
-    background: #2F3032;
-    color: white;
+    background: #212325;
+    color: #ffffff;
+    transition: 400ms ease-in-out;
+    left: 78rem;
+}
+
+.botao2:hover{
+    background-color: #ffffff;
+    color: black;
 }
 .botao2:active {
     border: 1px outset;
@@ -221,6 +232,8 @@ a, a:hover {
 
 td, th {
     font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -249,13 +262,8 @@ tr {
 }
 
 .custom-table {
-min-width: 900px; }
-.custom-table thead tr, #ter1
-.custom-table thead th {
-  position: absolute;
-  margin-left: 100px;
-  border-top: none;
-  border-bottom: none;
+    width: 56rem;
+    margin-left: -rem;
 }
 
 .custom-table thead tr, #ter2
