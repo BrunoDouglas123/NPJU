@@ -4,7 +4,7 @@ Jean Guilherme Mendonça<br>
 Bruno Douglas</h2>
 
 <h1>Projeto Integrador Uniamérica 2022<br></h1>
-<h2Escritório Jurídico e de Cidadania Luiz Gama</h2>
+<b><i><h2Escritório Jurídico e de Cidadania Luiz Gama</h2><i><b>
 
 <h3>Projeto que consiste na criação de uma plataforma para ser utilizado por alunos e professores 
 do curso de direito o qual tem como objetivo prestar serviços á em estado de vulnerabilidade.</h3>
