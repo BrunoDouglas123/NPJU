@@ -71,19 +71,23 @@ body {
     align-items: center;
     
 }
-.areabranca {
+.transpaarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 85%; height: 80vh;
+    margin-top: -1px;
+    width: 85%;
+    height: 58vh;
     justify-content: flex-start;
     align-content: center;
-    background: white;
+    background-color: #22222241;
+    box-shadow: 50px 50px 70px rgb(1 0 0 / 90%);
 }
 
 .fundoretangulo {
     display: flex;
     align-items: center;
+    border-radius: 10px;
     justify-content: space-between;
     margin-top: 0.5rem;
     width: 80vw; height: 7vh;
@@ -92,7 +96,7 @@ body {
 }
 .fonteareabranca {
     width: 120px;
-    padding-left: px;
+    padding-left: 25px;
     padding-right: 480px;
     line-height: 19px;
     font-family: 'Roboto';
@@ -102,11 +106,13 @@ body {
 }
 .inputesq {
     position: absolute;
-    width: 30vw; height: 4vh;
+    width: 28vw; height: 4vh;
     border-radius: 20px;
     box-shadow: 0 0 0 0;
     outline: 0;
     font-family: 'Roboto';
+    border-style: solid;
+    border-color: #FFF;
     font-weight: 400;
     font-size: 20px;
     text-align: center;
@@ -125,6 +131,17 @@ option{
     text-align: center;
     margin-left: 120px;
 }
+
+.fonteareabrance {
+    width: 120px;
+    padding-left: 20px;
+    padding-right: 480px;
+    line-height: 19px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
 .inputdir {
     position: absolute;
     width: 30vw; height: 4vh;
@@ -132,18 +149,59 @@ option{
     box-shadow: 0 0 0 0;
     outline: 0;
     background: white;
+    border-style: solid;
+    border-color: #FFF;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 20px;
     text-align: center;
     margin-left: 49vw;
 }
+
+.botao2 {
+    position: fixed; bottom: 100px;
+    width: 13vw; height: 5vh;
+    border: 1px solid #212325;
+    border-radius: 10px;
+    cursor: pointer;
+    left: 35rem;
+    
+    font-family: 'Roboto';
+    font-weight: bold;
+    
+    text-align: center;
+    background: #2F3032;
+    transition: 400ms ease-in-out;
+    color: white;
+}
+
 .botao {
     position: fixed;
-    top: 11rem;
+    bottom: 100px;
+    width: 13vw; 
+    height: 4.8vh;
+    border: 1px solid #212325;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+
+    text-align: center;
+    background: #2F3032;
+    transition: 400ms ease-in-out;
+    color: white;
+}
+
+#declaracao {
+    position: fixed;
+    top: 36rem;
+    left: 63rem;
     width: 13vw; 
     height: 5vh;
-    border: 1px solid #212325 ;
+    border: 1px solid #212325;
     border-radius: 10px;
     font-family: 'Roboto';
     font-weight: bold;
@@ -163,22 +221,7 @@ option{
     width: 12vw; height: 4.5vh;
     
 }
-.botao2 {
-    position: fixed; bottom: 100px;
-    width: 13vw; height: 5vh;
-    border: 1px solid #212325;
-    border-radius: 10px;
-    cursor: pointer;
-    left: 40rem;
-    
-    font-family: 'Roboto';
-    font-weight: bold;
-    
-    text-align: center;
-    background: #2F3032;
-    transition: 400ms ease-in-out;
-    color: white;
-}
+
 .botao2:hover {
     background-color: #ffffff;
     color: #212325; 
@@ -196,24 +239,70 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-#declaracao{
-    position: fixed; bottom: 100px;
-    width: 13vw; height: 5vh;
-    border: 1px solid #212325;
-    border-radius: 10px;
-    cursor: pointer;
-    left: 60rem;
-    
-    font-family: 'Roboto';
-    font-weight: bold;
-    
-    text-align: center;
-    background: #2F3032;
-    transition: 400ms ease-in-out;
-    color: white;
-}
-
 #declaracao:hover{
     background-color: #ffffff;
     color: #212325;
 }
+
+a {
+    text-decoration: none;
+}
+
+/*Conteudo do Footer*/
+footer{
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    color: white;
+    justify-content: space-between;
+    align-items: end; 
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+  }
+  
+  
+  .loguni {
+      position: relative;
+      width: 33.33%;
+      left: 0px;
+      justify-content: left;
+  }
+  
+  #log {
+      width: 171px;
+      height: 66px;
+      margin-left: 7px;
+  }
+  
+  .div-logo{
+    display: flex;
+    position: relative;
+    width: 33.33%;
+    justify-content: right;
+  }
+  
+  .logo{
+    display: flex;
+    position: relative;
+    text-align: end;
+    width: 27%;
+    height: 109px;
+  }
+  
+  .direito {
+      display: flex;
+      justify-content: center;
+  }
+  
+  p {
+      position: relative;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;   
+  }

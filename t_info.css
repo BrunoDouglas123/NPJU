@@ -186,7 +186,7 @@ body {
 }
 .botao2 {
     position: fixed;
-    top: 39rem;
+    top: 32rem;
     width: 13vw; 
     height: 5vh;
     border: 1px solid #212325 ;
@@ -197,7 +197,12 @@ body {
     background: #212325;
     color: #ffffff;
     transition: 400ms ease-in-out;
-    left: 78rem;
+    left: 35rem;
+}
+
+#botaoDocumentos{
+    position: fixed;
+    left: 51rem;
 }
 
 .botao2:hover{
@@ -223,6 +228,10 @@ input::-webkit-inner-spin-button {
 }
 
 /* Tabela de Documentos */
+table{
+    overflow-y: scroll;
+}
+
 a, a:hover {
   text-decoration: none !important; }
 
@@ -238,7 +247,7 @@ td, th {
 }
 
 th, #ter1 {
-    padding-left: 148px;
+    padding-left: 102px;
 }
 
 th, #ter2 {
@@ -248,6 +257,7 @@ th, #ter2 {
 th, #ter3 {
     padding-left: 189px;
 }
+
 
 td, #ad {
     color: blue;
@@ -282,12 +292,20 @@ tr {
   border-bottom: none;
 }
 
+.custom-table thead tr, #ter4
+.custom-table thead th {
+  position: absolute;
+  margin-left: -19px;
+  border-top: none;
+  border-bottom: none;
+}
+
 .custom-table tbody th, 
 .custom-table tbody td {
   color: #777;
   font-weight: 300;
-  padding-bottom: 20px;
-  padding-top: 25px;
+  padding-bottom: 12px;
+  padding-top: 18px;
   font-weight: 300;
   border: none; }
 .custom-table tbody th small,
@@ -309,6 +327,37 @@ tr {
   margin-bottom: 15px; }
   .custom-table .box td, .custom-table .box th {
     border: none !important;
+}
+
+.documentos{
+    position: absolute;
+    display: block;
+    width: 2rem;
+    height: 12rem;
+    left: 76rem;
+    top: 22.8rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+}
+
+svg{
+    position: relative;
+    width:1rem;
+    top: -18px
+}
+
+#svg1{
+    padding-top: 0.5rem;
+}
+
+#svg2{
+    padding-top: 2.8rem;
+}
+
+#svg3{
+    padding-top: 2.7rem;
 }
 
 @media screen and (max-width: 1037px) {

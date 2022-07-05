@@ -84,6 +84,7 @@ input::placeholder{
         justify-content: center;
         position: relative;
         width: 80%;
+        top: 2.2rem;
     }
 
     #campo::placeholder {
@@ -151,7 +152,7 @@ address span a {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-block: 5rem;
+    margin-top: 4rem;
     margin-inline: 2.7rem;
 }
 
@@ -280,13 +281,12 @@ h2{
         height: 61px;
         margin-inline: auto;
     }
-
-    #second1 {
-        width: 81px;
-        height: 20px;
-        top: 266px;
+    
+    .second1 {
+        width: 100%;
         margin-inline: auto;
         font-size: 10px;
+        margin-top: 0.1rem;
     }
 
     #second2 {
@@ -297,18 +297,23 @@ h2{
         font-size: 10px;
     }
 
-    #second3 {
-        width: 90px;
-        height: 20px;
-        top: 326px;
-        left: 100px;
+    .juris{
+        width: 100%;
+        margin-inline: auto;
         font-size: 10px;
+        margin-top: 0.2rem;
     }
-    
-    .linha{
-        position: relative;
+
+    .juris.second{
         width: 100%;
     }
+
+    .checki{
+        text-align: center;
+        margin-inline: auto;
+        margin-top: 1.5rem;
+    }
+ 
     h2{
         margin-inline: auto;
     }
@@ -321,9 +326,20 @@ h2{
         width: 33%;
     }
 
-    .logo{
-        display: flex;
-        width: 20%;
+
+    #botao-buscar{
+        margin-inline: 2rem;
+        width: 5rem;
+        top: 0.4rem;
+    }
+
+    body{
+        background: rgba(0, 0, 0, 0.3) url(./img/deusa.jpg);;
+        background-position: center;
+    }
+
+    footer{
+        margin-top: 5rem;
     }
 }
 
@@ -387,6 +403,7 @@ footer{
   
   .logo{
     display: flex;
+    position: relative;
     text-align: end;
     width: 25%;
   }
@@ -400,15 +417,15 @@ footer{
 @media screen and (max-width: 428px) {
 #log {
     width: 81px;
-    height: 31px;
-    margin-top: 78px;
-    margin-left: 8px;
+    height: 26px;
+    margin-bottom: -4px;
 }
     
 p {
     font-size: 9px;
-    margin-top: 88px;
     text-align: center;
+    margin-bottom: 0;
+    padding-left: 15px;
 }
 }
 #a {

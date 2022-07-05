@@ -33,7 +33,6 @@ nav{
     text-decoration: underline overline;
     margin-inline: auto;
     padding-top: 2rem;
-
 }
 
 
@@ -42,7 +41,7 @@ nav{
     color: #FFF;
     display: flex;
     justify-content: center;
-    font-size: 28px;
+    font-size: 20px;
   }
 }
 
@@ -72,7 +71,6 @@ nav{
 
 @media screen and (max-width: 598px) {
   img {
-    flex: 50%;
     max-width: 50%;
   }
 }
@@ -104,6 +102,11 @@ label {
   color: #ffffff;
   font-family: 'roboto';
   font-size: 18px;
+  top: 0.2rem;
+}
+
+#labelSenha{
+  margin-block:0.5rem;
 }
 
 #verSenha{
@@ -120,7 +123,7 @@ input {
   outline: none;
   width: 100%;
   height: 4vh;
-  padding: 14px 0;
+  padding: 14px 2px;
   font-size: 14px;
   transition: 500ms ease-in-out;
 }
@@ -250,10 +253,59 @@ a {
 
 }
 
+.icone-verde1{
+  position: relative;
+  width: 1rem;
+  display: none;
+  left: 6.2rem;
+  top: -1.0rem;
+}
+
+.icone-vermelho1{
+  position: relative;
+  width: 1rem;
+  display: none;
+  left: 11.7rem;
+  top: -0.9rem;
+}
+
+.icone-transparent1{
+  position: relative;
+  width: 1rem;
+  display: flex;
+  left: 3rem;
+  top: -1.2rem;
+}
+
+.icone-transparent2{
+  position: relative;
+  width: 1rem;
+  display: flex;
+  left: 5.5rem;
+  top: -1.1rem;
+}
+
+.icone-verde2{
+  position: relative;
+  width: 1rem;
+  display: none;
+  left: 6.5rem;
+  top: -0.9rem;
+}
+
+.icone-vermelho2{
+  position: relative;
+  width: 1rem;
+  display: none;
+  left: 15.6rem;
+  top: -0.9rem;
+}
+
 @media screen and (max-width: 598px) {
   .formulario {
     width: 100%;
-    padding-top:0;
+    padding-top: 10px;
+    margin-top: 8rem;
   }
 
   label {
@@ -308,6 +360,29 @@ a {
     justify-content: right;
     margin-top: -2rem;
   }
+
+  .icone-verde1{
+    left: 4.6rem;
+    top: -0.9rem;
+  }
+
+  .icone-vermelho1{
+    left: 8.4rem;
+    top: -0.9rem;
+  }
+
+  .icone-verde2{
+    left: 4.9rem;
+  }
+
+  .icone-vermelho2{
+    left: 11.4rem;
+  }
+
+  body{
+    background: rgba(0, 0, 0, 0.3) url(./img/deusa.jpg);;
+    background-position: center;
+}
 }
 
 @media screen and (max-width: 388px) {
@@ -369,6 +444,10 @@ a {
   p{
     margin: 0px;
   }
+
+  h1{
+    font-size: 10px;
+  }
 }
 
 /*Conteudo do Footer*/
@@ -399,8 +478,6 @@ footer{
 #log {
     width: 171px;
     height: 66px;
-
-    
     margin-left: 7px;
 }
 
@@ -412,9 +489,10 @@ footer{
 }
 
 .logo{
-  display: flex;
-  text-align: end;
-  width: 8rem;
+    display: flex;
+    position: relative;
+    text-align: end;
+    width: 25%;
 }
 
 .direito {
@@ -427,8 +505,7 @@ p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-   
+    font-size: 12px;   
 }
 
 @media screen and (max-width: 598px) {
@@ -450,17 +527,18 @@ p {
   }
 }
 
-@media screen and (max-width: 388px) {
+@media screen and (max-width: 428px) {
   #log {
-    max-width: 90px;
-    height: 31px;
-    margin-top: 78px;
-    margin-left: 8px;
+    width: 81px;
+    height: 26px;
+    margin-bottom: -4px;
 }
 
   p {
     font-size: 9px;
-    margin-top: 88px;
+    text-align: center;
+    margin-bottom: 0;
+    padding-left: 15px;
   }
 }
 
