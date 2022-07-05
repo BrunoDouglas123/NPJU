@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Ovo&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body, html {
+    background: rgba(0, 0, 0, 0.4) url(./img/direito.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/*Cabeçalho*/
+
+.busca {
+    position: relative;
+    width: 100%; 
+    height: 10vh;
+    border: 0px solid red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#campo {
+    position: relative;
+    display: block;
+    top: 20px;
+    width: 60%;
+    height: 31px;
+
+    padding: 0.5rem;
+    margin-inline: auto;
+
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+#botao-buscar{
+    font-family: "Roboto";
+    font-weight: bold;
+    padding-block: 0.5rem;
+    display: flex;
+    margin-top: 2rem;
+    background: #ffffff;
+    border: 1px solid #272424;
+    border-radius: 15px;
+    position: relative;
+    width: 15%;
+    margin-left: 19.2%;
+    justify-content: center;
+    transition: 400ms ease-in-out;
+}
+
+#botao-buscar:hover{
+    background-color: #212325;
+    color: white;
+}
+
+input::placeholder{
+    color: #958e8edc;
+    transition: 400ms ease-in-out;
+  }
+  
+  input:hover{
+    border: 1px solid #212325;
+    transition: 400ms ease-in-out;
+  }
+  
+  input:hover::placeholder{
+    color: #8a8a8a;
+  }
+  
+  input:focus::placeholder{
+    color: #242324;
+  }
+
+@media screen and (max-width: 428px) {
+    #campo {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 80%;
+        top: 2.2rem;
+    }
+
+    #campo::placeholder {
+        color:#000000;
+        margin-top: 6px;
+    }
+
+    #lupa {
+        width: 28px;
+        height: 31px;
+        padding-top: 2.5vh;
+
+        margin-left: -1px;
+    }
+}
+
+/*Cabeçalho Lateral*/
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+}
+
+
+.user {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
+}
+
+.user address {
+    display: block;
+    justify-content: center;
+}
+
+address {
+    display: block;
+    position: relative;
+    color: #FFFFFF;
+    width: 242px;
+    height: 21px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+address span a {
+    color: white;
+}
+
+.checki{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.linha {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 4rem;
+    margin-inline: 2.7rem;
+}
+
+#icone {
+    display: flex;
+    width: 70px;
+    margin-left: 2.4rem;
+}
+
+.second1 {
+    font-family: "Roboto";
+    font-weight: bold;
+    padding-block: 0.5rem;
+    display: flex;
+    margin-top: 1rem;
+    background: #ffffff;
+    border: 1px solid #272424;
+    border-radius: 15px;
+    position: relative;
+    width: 28%;
+    margin-left: 2%;
+    justify-content: center;
+    transition: 400ms ease-in-out;
+  }
+
+
+  #second2 {
+    position: relative;
+    font-family: "Roboto";
+    width: 120px;
+    font-size: 13px;
+    
+    color: #FFF;
+    background: #ffffff;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    transition: 400ms ease-in-out;
+}
+
+.second1:hover{
+    background-color: #212325;
+    color: white;
+}
+
+
+.juris{
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 13px;
+    padding-block: 0.5rem;
+    display: flex;
+    margin-top: 1rem;
+    background: #ffffff;
+    border: 1px solid #272424;
+    border-radius: 15px;
+    position: relative;
+    width: 28%;
+    margin-left: 2%;
+    justify-content: center;
+    transition: 400ms ease-in-out;
+    color:black;
+}
+
+.juris:hover{
+    color: white;
+    background-color: #272424;
+}
+
+#a{
+    position: relative;
+}
+
+#botao-logout{
+    font-family: "Roboto";
+    padding: 0.2rem;
+    width: 5rem;
+    margin-left: 2rem;
+    border: 1px solid #272424;
+    border-radius: 15px;
+    transition: 400ms ease-in-out;
+}
+
+
+#botao-logout:hover{
+    background-color: #212325;
+    color: white;
+}
+
+h2{
+    display: flex;
+    margin: 0.3rem;
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 428px) {
+
+    body{
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        height: 100%; 
+    }
+
+    address {
+        font-size: 14px;
+        margin-top: -20px;
+        margin-left: 0px;
+        left: 84px;
+    }
+
+    .user {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+
+    #icone {
+        width: 61px;
+        height: 61px;
+        margin-inline: auto;
+    }
+    
+    .second1 {
+        width: 100%;
+        margin-inline: auto;
+        font-size: 10px;
+        margin-top: 0.1rem;
+    }
+
+    #second2 {
+        width: 90px;
+        height: 20px;
+        top: 296px;
+        left: 100px;
+        font-size: 10px;
+    }
+
+    .juris{
+        width: 100%;
+        margin-inline: auto;
+        font-size: 10px;
+        margin-top: 0.2rem;
+    }
+
+    .juris.second{
+        width: 100%;
+    }
+
+    .checki{
+        text-align: center;
+        margin-inline: auto;
+        margin-top: 1.5rem;
+    }
+ 
+    h2{
+        margin-inline: auto;
+    }
+
+    #botao-logout{
+        margin-inline: auto;
+    }
+
+    .div-logo{
+        width: 33%;
+    }
+
+
+    #botao-buscar{
+        margin-inline: 2rem;
+        width: 5rem;
+        top: 0.4rem;
+    }
+
+    body{
+        background: rgba(0, 0, 0, 0.3) url(./img/deusa.jpg);;
+        background-position: center;
+    }
+
+    footer{
+        margin-top: 5rem;
+    }
+}
+
+/*Imagem de Fundo*/
+.imagem {
+    display: flex;
+    justify-content: center;
+}
+
+#fundo {
+    width: 20rem;
+    height: auto;
+    margin-left: -9vh;
+}
+
+@media screen and (max-width: 428px) {
+    #fundo {
+        flex: 50%;
+        margin-left: -1%;
+        max-width: 81%;    
+    }
+}
+
+/*Conteudo do Footer*/
+footer{
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    color: white;
+    justify-content: space-between;
+    align-items: end; 
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+  }
+  
+  
+  .loguni {
+      position: relative;
+      width: 33.33%;
+      left: 0px;
+      justify-content: left;
+  }
+  
+  #log {
+      width: 171px;
+      height: 66px;
+      margin-left: 7px;
+  }
+  
+  .div-logo{
+    display: flex;
+    position: relative;
+    width: 33.33%;
+    justify-content: right;
+  }
+  
+  .logo{
+    display: flex;
+    position: relative;
+    text-align: end;
+    width: 25%;
+  }
+  
+  .direito {
+      display: flex;
+      justify-content: center;
+  }
+
+
+@media screen and (max-width: 428px) {
+#log {
+    width: 81px;
+    height: 26px;
+    margin-bottom: -4px;
+}
+    
+p {
+    font-size: 9px;
+    text-align: center;
+    margin-bottom: 0;
+    padding-left: 15px;
+}
+}
+#a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
