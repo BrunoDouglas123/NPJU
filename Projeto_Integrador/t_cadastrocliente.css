@@ -12,6 +12,7 @@ body {
     position: fixed;
     width: 100vw;
     height: 10vh;
+    padding-left: 100px;
     font-family: 'Cinzel', serif;
     font-weight: 400;
     text-decoration: underline overline;
@@ -63,11 +64,12 @@ body {
     color: #f6d55e;
 }
 .container {
-    width: 100%; height: 100vh;
+    width: 100vw; height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: right;
     align-items: center;
+    
 }
 .transpaarea {
     display: flex;
@@ -81,11 +83,7 @@ body {
     background-color: #22222241;
     box-shadow: 50px 50px 70px rgb(1 0 0 / 90%);
 }
-.areainputs {
-    display: flex;
-    justify-content: center;
-    width: 80%; height: 50vh;
-}
+
 .fundoretangulo {
     display: flex;
     align-items: center;
@@ -161,10 +159,12 @@ option{
 }
 
 .botao2 {
+    position: fixed; bottom: 100px;
     width: 13vw; height: 5vh;
     border: 1px solid #212325;
     border-radius: 10px;
     cursor: pointer;
+    left: 35rem;
     
     font-family: 'Roboto';
     font-weight: bold;
@@ -174,14 +174,10 @@ option{
     transition: 400ms ease-in-out;
     color: white;
 }
-.areabotoes {
-    display: flex;
-    margin-top: 30px;
-    width: 80%; height: 5vh;
-    align-items: center;
-    justify-content: space-around;
-}
+
 .botao {
+    position: fixed;
+    bottom: 100px;
     width: 13vw; 
     height: 4.8vh;
     border: 1px solid #212325;
@@ -200,6 +196,9 @@ option{
 }
 
 #declaracao {
+    position: fixed;
+    top: 36rem;
+    left: 63rem;
     width: 13vw; 
     height: 5vh;
     border: 1px solid #212325;
@@ -210,7 +209,6 @@ option{
     background: #ffffff;
     color: black;
     transition: 400ms ease-in-out;
-    cursor: pointer;
 }
 
 .botao:hover{

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./img/Logo.png">
+  <link rel="stylesheet" href="t_info.css">
+  <title>Informações</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="cabecalho">Eventos</h1>
+  </header>
+<!---->
+  <div class="container">
+
+    <div class="areabranca">
+        <div class="areainputs">
+            <div class="fundoretangulo">
+              <h3 class="fonteareabranca">Nome</h3>
+              <input class="inputesq" type="text" id="nome" name="nome" placeholder="Digite o Nome Completo">
+              <h3 class="fonteareabranca">Data de Nascimento</h3>
+              <input class="inputdir" type="date" id="data" name="data">
+          </div>
+          <div class="fundoretangulo">
+              <h3 class="fonteareabranca">RG</h3>
+              <input class="inputesq" type="number" id="rg" name="rg" placeholder="Digite o RG">
+              <h3 class="fonteareabranca">CPF</h3>
+              <input class="inputdir" type="number" id="cpf" name="cpf" placeholder="Digite o CPF">
+          </div>
+          <div class="fundoretangulo">
+              <h3 class="fonteareabranca">Endereço</h3>
+              <input class="inputesq" type="text" id="endereco" name="endereco" placeholder="Endereço">
+              <h3 class="fonteareabranca">Telefone</h3>
+              <input class="inputdir" type="tel" id="tel" name="tel" placeholder="Telefone">
+          </div>
+          <div class="fundoretangulo">
+              <h3 class="fonteareabranca">Juiz</h3>
+              <input class="inputesq" type="tel" id="juiz" name="juiz" placeholder="Nome do juiz">
+              <h3 class="fonteareabranca">Parte Contrária</h3>
+              <input class="inputdir" type="tel" id="pcont" name="pcont" placeholder="Nome da parte contrária">
+          </div>
+          <div class="fundoretangulo">
+              <h3 class="fonteareabranca">Vara judicial</h3>
+              <select class="inputesq" id="varajud" name="varajud">
+                  <option >Selecione o juizado</option>
+                  <option >Vara de infância e juventude</option>
+                  <option >Vara da Fazenda Pública</option>
+                  <option >Vara cívil</option>
+                  <option >Vara criminal</option>
+                  <option >Juizado especial criminal</option>
+                  <option >Juizado especial cível</option>
+              </select>
+              <h3 class="fonteareabranca">Estado Civil</h3>
+              <select class="inputesq" id="estcivil" name="estcivil">
+              <option >Selecione seu Estado Civil</option>
+              <option >Casado</option>
+              <option >Divorciado</option>
+              <option >Solteiro</option>
+              <option >Viuvo</option>
+          </select>
+          </div>
+          
+        </div>
+        <section>
+          <div class="table-responsive">
+
+            <table class="table custom-table">
+              <thead>
+                <tr>
+                  <th id="ter1" scope="col">Eventos</th>
+                  <th id="ter2" scope="col">Datas</th>
+                  <th id="ter3" scope="col">Acontecimento</th>
+             
+                </tr>
+              </thead>
+              <tbody>
+                <tr scope="row">
+                  <td>1</td>
+                  <td>21/04/2019</td>
+                  <td>Primeira conversa com o cliente. Violência doméstica</td>
+                </tr>
+
+                <tr>
+                  <td>2</td>
+                  <td>21/04/2019</td>
+                  <td>Audiência 77839994759 marcada para data 28/04/2019.</td>
+                </tr>
+
+                <tr>
+                  <td>3</td>
+                  <td>21/04/2019</td>
+                  <td>Audiência 77839994759 adiada para data 01/05/2019.</td>
+                </tr>
+
+                <tr>
+                  <td><a href="" id="ad">Adicionar +</a></td>
+                  <td>--</td>
+                  <td>--</td>
+                </tr>
+                <div class="documentos">
+                  
+
+              </tbody>
+            </table>
+          </div>
+        </section>
+        
+        <div class="areabotoes">
+          <button id="botaoIndex" class="botao" type="button" onclick="voltarIndex()">PÁGINA INICIAL</button>
+          <button id="botaoDocumentos" class="botao2"> DOCUMENTOS </button>
+          <button id="botaoIndex" class="botao2" onclick="voltarIndex()">CONCLUIR</button>
+        </div>
+    </div>
+  </div>
+  <footer class="rodape">
+    <img class="logouniamerica" src="./img/Uni.png" alt="">
+    <p >Crafted by NPJU team © COPYRIGHT 2022</p>
+    
+
+  </footer>
+  <script src="t_info.js"></script>
+  <script src="t_cadastrocliente.js"></script>
+</body>
+
+</html>

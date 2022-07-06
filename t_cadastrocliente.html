@@ -1,68 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="t_cadastrocliente.css">
+    <link rel="icon" type="image/x-icon" href="./img/Logo.png">
     <title>Cadastro de Clientes</title>
 </head>
+
 <body>
-    <header><h1 class="cabecalho">Cadastro de Clientes</h1></header>
+    <header>
+        <h1 class="cabecalho">Cadastro de Clientes</h1>
+    </header>
 
     <div class="container">
-        <div class="lateral-esq">
-            <img class="logo" src="./img/Logo.png" alt="">
-            <p class="npju">NPJU</p>
-            <button class="botao"> 
-                <a class="a" href="t_home.html">Página Inicial</a>
-            </button>
-        </div>
-        
-        <div class="areabranca">
-            <img class="logodefundo" src="./img/Logon.png" alt="">
-            <div class="areabranca">
-                <div class="fundoretangulo">
-                    <p class="fonteareabranca">Nome</p>
-                    <p class="fonteareabranca">Data de Nascimento</p>
-                    <input class="inputesq" type="text" placeholder="Digite seu Nome Completo">
-                    <input class="inputdir" type="date">
+        <div class="areainputs">
+            <div class="transpaarea">
+                <form name="cadastrocliente">
+                    <div class="fundoretangulo">
+                        <p class="fonteareabranca">Nome</p>
+                        <p class="fonteareabranca">Data de Nascimento</p>
+                        <input class="inputesq" type="text" name="nome" placeholder="Digite o Nome Completo">
+                        <input class="inputdir" type="date" name="data">
+                    </div>
+                    <div class="fundoretangulo">
+                        <p class="fonteareabranca">RG</p>
+                        <p class="fonteareabranca">CPF</p>
+                        <input class="inputesq" type="number" name="rg" placeholder="Digite o RG">
+                        <input class="inputdir" type="number" name="cpf" placeholder="Digite o CPF">
+                    </div>
+                    <div class="fundoretangulo">
+                        <p class="fonteareabranca">Endereço</p>
+                        <p class="fonteareabranca">Telefone</p>
+                        <input class="inputesq" type="text" name="endereco" placeholder="Endereço">
+                        <input class="inputdir" type="tel" name="tel" placeholder="Telefone">
+                    </div>
+                    <div class="fundoretangulo">
+                        <p class="fonteareabranca">Juiz</p>
+                        <p class="fonteareabranca">Parte Contrária</p>
+                        <input class="inputesq" type="tel" name="juiz" placeholder="Nome do juiz">
+                        <input class="inputdir" type="tel" name="pcont" placeholder="Nome da parte contrária">
+                    </div>
+                    <div class="fundoretangulo">
+                        <p class="fonteareabranca">Vara judicial</p>
+                        <select class="inputesq" name="varajud">
+                            <option >Selecione o juizado</option>
+                            <option >Vara de infância e juventude</option>
+                            <option >Vara da Fazenda Pública</option>
+                            <option >Vara cívil</option>
+                            <option >Vara criminal</option>
+                            <option >Juizado especial criminal</option>
+                            <option >Juizado especial cível</option>
+                        </select>
+                        <p class="fonteareabranca">Anexar Documentos</p>
+                        <input class="inputdir" type="file">
+                    </div>
+                    <div class="fundoretangulo">
+                        <p class="fonteareabrance">Estado Civil</p>
+                        <select class="inputesq" name="estcivil">
+                            <option >Selecione seu Estado Civil</option>
+                            <option >Casado</option>
+                            <option >Divorciado</option>
+                            <option >Solteiro</option>
+                            <option >Viuvo</option>
+                        </select>
+                    </div>
+                </form>
+             </div>
+           </div>
+                <div class="areabotoes">
+                    <button id="declaracao" onclick="voltaHome()" target="_blank"> PÁGINA INICIAL</button>
+                    <button class="botao" id="botao-paraHome" href="./img/DECLARAÇÃO-DE-POBREZA.pdf"> DECLARACÃO DE HIPOSSUFICIÊNCIA</button>
+                    <button id="test" class="botao2" onclick="pegaDados(),voltaHome()">SALVAR DADOS</button>
                 </div>
-                <div class="fundoretangulo">
-                    <p class="fonteareabranca">RG</p>
-                    <p class="fonteareabranca">CPF</p>
-                    <input class="inputesq" type="number" placeholder="Digite seu RG">
-                    <input class="inputdir" type="number" placeholder="Digite seu CPF">
-                </div>
-                <div class="fundoretangulo">
-                    <p class="fonteareabranca">Email</p>
-                    <p class="fonteareabranca">Endereço</p>
-                    <input class="inputesq" type="email" placeholder="Digite seu Email">
-                    <input class="inputdir" type="text" placeholder="Digite seu endereço">
-                </div>
-                <div class="fundoretangulo">
-                    <p class="fonteareabranca">Celular</p>
-                    <p class="fonteareabranca">Telefone</p>
-                    <input class="inputesq" type="tel" placeholder="Digite seu Número de Celular">
-                    <input class="inputdir" type="tel" placeholder="Digite seu Número de Telefone">
-                </div>
-                <div class="fundoretangulo">
-                    <p class="fonteareabranca">Tipo de Serviço</p>
-                    <select class="inputesq" name="Tipo de Serviço"> 
-                        <option value="none">Selecione o Serviço Desejado</option>
-                    </select>
-                    <p class="fonteareabranca">Anexar Documentos</p>
-                    <input class="inputdir" type="file">
-                </div>
-                <input class="botao2" type="submit" value="Salvar Dados">
-            </div>
-
-        </div>
+         </div>
     </div>
-    <footer class="rodape">
-        <img class="logouniamerica" src="./img/Uni.png" alt="">
-        <p class="Direitosaut">Crafted by NPJU team © COPYRIGHT 2022</p>
+    <footer>
+        <div class="loguni">
+            <a href="https://uniamerica.br/" target="_blank"><img src="./img/Uni.png" id="log" alt="Logo Uniamerica"
+                    title="Logo Uniamerica"></a>
+        </div>
+
+        <div class="direito">
+            <p>Crafted by NPJU team © COPYRIGHT 2022</p>
+        </div>
+
+        <div class="div-logo">
+            <img class="logo" src="./img/Logo-definitiva2.png" alt="">
+        </div>
 
     </footer>
+    <script src="t_cadastrocliente.js"></script>
 </body>
+
 </html>
