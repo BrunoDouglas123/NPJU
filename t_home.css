@@ -28,11 +28,11 @@ body, html {
     position: relative;
     display: block;
     top: 20px;
-    width: 60%;
+    width: 96%;
     height: 31px;
 
     padding: 0.5rem;
-    margin-inline: auto;
+    margin-left: 1%;
 
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -50,7 +50,7 @@ body, html {
     border-radius: 15px;
     position: relative;
     width: 15%;
-    margin-left: 19.2%;
+    margin-left: 1%;
     justify-content: center;
     transition: 400ms ease-in-out;
 }
@@ -83,7 +83,7 @@ input::placeholder{
         display: flex;
         justify-content: center;
         position: relative;
-        width: 80%;
+        width: 92%;
         top: 2.2rem;
     }
 
@@ -167,7 +167,7 @@ address span a {
     font-weight: bold;
     padding-block: 0.5rem;
     display: flex;
-    margin-top: 1rem;
+    margin-top: 5rem;
     background: #ffffff;
     border: 1px solid #272424;
     border-radius: 15px;
@@ -198,29 +198,6 @@ address span a {
 }
 
 
-.juris{
-    text-decoration: none;
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 13px;
-    padding-block: 0.5rem;
-    display: flex;
-    margin-top: 1rem;
-    background: #ffffff;
-    border: 1px solid #272424;
-    border-radius: 15px;
-    position: relative;
-    width: 28%;
-    margin-left: 2%;
-    justify-content: center;
-    transition: 400ms ease-in-out;
-    color:black;
-}
-
-.juris:hover{
-    color: white;
-    background-color: #272424;
-}
 
 #a{
     position: relative;
@@ -250,6 +227,76 @@ h2{
     color: #ffffff;
 }
 
+/*CSS DO MENU DE SITES*/
+h3{
+    display: flex;
+    width: 50%;
+    font-family: "Roboto";
+    color: #ffffff;
+    text-decoration: overline;
+    justify-content: center;
+    margin-left: 27%;
+}
+
+.sites{
+    width: 50%;
+    display: none;
+    flex-direction: column;
+    position: relative;
+    text-align: end;
+    float: right;
+    top: -23.9rem;
+    align-items: center;
+    
+}
+
+.site{
+    font-family: "Roboto";
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #212325;
+    border-radius: 15px;
+    background-color: #212325;
+    margin-top: 0.2rem;
+    transition: 400ms ease-in-out;
+    padding-block: 0.5rem;
+    margin-top: 0.5rem;
+    width: 50%;
+    margin-left: 27%;
+}
+
+.site:hover{
+    color: #212325;
+    background: #ffffff;
+    border: #ffffff;
+}
+
+#esconder-mostrar{
+    position: relative;
+}
+
+.botao-esconder{
+    font-family: "Roboto";
+    font-weight: bold;
+    width: 14%;
+    margin-left: 1%;
+    border-radius: 15px;
+    padding-block: 0.5rem;
+    border: 1px solid #ffffff;
+    transition: 400ms ease-in-out;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.botao-esconder:hover{
+    background: #212325;
+    color: white;
+    border: 1px solid #212325;
+}
+
+/*FIM DO CSS DO MENU DE SITE*/
 @media screen and (max-width: 428px) {
 
     body{
@@ -287,6 +334,7 @@ h2{
         margin-inline: auto;
         font-size: 10px;
         margin-top: 0.1rem;
+        padding-inline: 4rem;
     }
 
     #second2 {
@@ -295,17 +343,6 @@ h2{
         top: 296px;
         left: 100px;
         font-size: 10px;
-    }
-
-    .juris{
-        width: 100%;
-        margin-inline: auto;
-        font-size: 10px;
-        margin-top: 0.2rem;
-    }
-
-    .juris.second{
-        width: 100%;
     }
 
     .checki{
@@ -328,7 +365,6 @@ h2{
 
 
     #botao-buscar{
-        margin-inline: 2rem;
         width: 5rem;
         top: 0.4rem;
     }
@@ -341,6 +377,28 @@ h2{
     footer{
         margin-top: 5rem;
     }
+/*MÍDIA DO MENU DE SITES*/
+    .sites{
+        text-align: center;
+        margin-right: 7.8rem;
+        top: 1.3rem;
+        float: right;
+        display: flex;
+    }
+
+    .site{
+        width: 100%;
+        padding-block: 0.2rem;
+    }
+
+    h3{
+        width: 100%;
+    }
+
+    .botao-esconder{
+        display: none;
+    }
+/*FIM DO CSS DO MENU DE SITES*/
 }
 
 /*Imagem de Fundo*/
@@ -405,7 +463,7 @@ footer{
     display: flex;
     position: relative;
     text-align: end;
-    width: 25%;
+    width: 19%;
   }
   
   .direito {

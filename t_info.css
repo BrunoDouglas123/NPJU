@@ -138,6 +138,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     z-index: 2;
+    padding-left: 0.4rem;
 }
 #ad {
     color: blue;
@@ -155,9 +156,10 @@ body {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
-    text-align: center;
+    text-align: start;
     background: white;
     z-index: 2;
+    padding-left: 0.4rem;
 }
 .botao {
     

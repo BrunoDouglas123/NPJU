@@ -1,6 +1,6 @@
-let botaoHome = document.getElementById('botao-paraHome');
-let botaoDeclaracao = document.getElementById('declaracao');
-let botaosalvar = document.getElementById('test')
+let botaoHome = document.getElementById('declaracao');
+let botaoDeclaracao = document.getElementById('declaracsao');
+let botaosalvar = document.getElementById('salvar')
 
 var nome, data, rg, cpf, endereco, tel, juiz, pcont, varajud, estcivil
 

@@ -6,7 +6,6 @@ function voltarIndex(){
     location.href = "t_home.html"
   }
 }
-
 function substituirDados() {
   document.getElementById('nome').value = localStorage.getItem('nome')
   document.getElementById('data').value = localStorage.getItem('data')

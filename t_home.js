@@ -2,6 +2,8 @@ let botaoLogout = document.getElementById('botao-logout');
 let inputBuscar = "";
 let Maria = 'Maria';
 let botaoCadastrarCliente = document.getElementById('second1');
+let botaoEsconder = document.getElementById('esconder-mostrar');
+let divEsconder = document.querySelector('.sites');
 
 //função para desligar
 function logout(){
@@ -31,6 +33,15 @@ document.addEventListener("keypress", function(e) {
         var btn = document.querySelector("#botao-buscar");
       
       btn.click();
-    
     }
   });
+
+  botaoEsconder.addEventListener('click', function(){
+
+    if(divEsconder.style.display === 'flex'){
+        divEsconder.style.display = 'none';
+    } else {
+        divEsconder.style.display = 'flex';
+    }
+
+  })
