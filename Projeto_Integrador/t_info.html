@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./img/Logo.png">
+  <link rel="stylesheet" href="t_info.css">
+  <title>Informações</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="cabecalho">Eventos</h1>
+  </header>
+
+  <div class="container">
+    <div class="lateral-esq">
+      <a href="index.html"><img class="logo" src="./img/Logo-definitiva2.png" alt=""></a>
+      <button id="botaoIndex" class="botao" type="button" onclick="voltarIndex()">
+        PÁGINA INICIAL
+      </button>
+    </div>
+
+    <div class="areabranca">
+      <div class="areabranca">
+        <div class="fundoretangulo">
+          <p class="fontreabranca">Processo</p>
+          <input class="inputesq" type="text" placeholder="00012345520104047010">
+        </div>
+
+        <div class="fundoretangulo">
+          <p class="fontreabranca">Cliente</p>
+          <input class="inputesq" type="number" placeholder="Maria Silva">
+        </div>
+
+        <div class="fundoretangulo">
+          <p class="fontreabranca">Parte Contraria</p>
+          <input class="inputesq" type="email" placeholder="Roberto Souza">
+        </div>
+
+        <div class="fundoretangulo">
+          <p class="fonteareabranca">Juiz Responsável</p>
+          <input class="inputesq" type="tel" placeholder="Ana Maria">
+        </div>
+
+        <div class="fundoretangulo">
+          <p class="fonteareabranca">Juizado</p>
+          <input class="inputesq" type="tel" placeholder="Vara criminal">
+        </div>
+
+        <section>
+          <div class="table-responsive">
+
+            <table class="table custom-table">
+              <thead>
+                <tr>
+                  <th id="ter1" scope="col">Eventos</th>
+                  <th id="ter2" scope="col">Datas</th>
+                  <th id="ter3" scope="col">Acontecimento</th>
+             
+                </tr>
+              </thead>
+              <tbody>
+                <tr scope="row">
+                  <td>1</td>
+                  <td>21/04/2019</td>
+                  <td>Primeira conversa com o cliente. Violência doméstica</td>
+                </tr>
+
+                <tr>
+                  <td>2</td>
+                  <td>21/04/2019</td>
+                  <td>Audiência 77839994759 marcada para data 28/04/2019.</td>
+                </tr>
+
+                <tr>
+                  <td>3</td>
+                  <td>21/04/2019</td>
+                  <td>Audiência 77839994759 adiada para data 01/05/2019.</td>
+                </tr>
+
+                <tr>
+                  <td><a href="" id="ad">Adicionar +</a></td>
+                  <td>--</td>
+                  <td>--</td>
+                </tr>
+                <div class="documentos">
+                  
+
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <button id="botaoIndex" class="botao2" onclick="voltarIndex()">CONCLUIR</button>
+        <button id="botaoDocumentos" class="botao2"> DOCUMENTOS </button>
+      </div>
+
+    </div>
+  </div>
+  <footer class="rodape">
+    <img class="logouniamerica" src="./img/Uni.png" alt="">
+    <p class="Direitosaut">Crafted by NPJU team © COPYRIGHT 2022</p>
+
+  </footer>
+  <script src="t_info.js"></script>
+</body>
+
+</html>

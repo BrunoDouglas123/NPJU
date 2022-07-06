@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="t_cadastro.css">
+    <link rel="icon" type="image/x-icon" href="./img/Logo.png">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="cabecalho">Cadastro de Administradores</h1>
+    </header>
+
+    <div class="container">
+        <div class="areainputs">
+            <div class="transpaarea">
+                <div class="transpaarea">
+                    <div class="fundoretangulo">
+                        <p class="fonteareabranca">Nome</p>
+                        <p class="fonteareabranca">Data de Nascimento</p>
+                        <input class="inputesq" type="text" placeholder="Digite seu Nome Completo">
+                        <input class="inputdir" type="date">
+                    </div>
+                    <div class="fundoretangulo">
+                        <p class="fonteareabranca">RG</p>
+                        <p class="fonteareabranca">CPF</p>
+                        <input class="inputesq" type="number" placeholder="Digite seu RG">
+                        <input class="inputdir" type="number" placeholder="Digite seu CPF">
+                    </div>
+                    <div class="fundoretangulo">
+                        <p class="fonteareabranca">Email</p>
+                        <p class="fonteareabranca">Senha</p>
+                        <input class="inputesq" type="email" placeholder="Digite seu Email">
+                        <input class="inputdir" type="password" placeholder="Digite sua senha">
+                    </div>
+                    <div class="fundoretangulo">
+                        <p class="fonteareabranca">Confirmar senha</p>
+                        <p class="fonteareabranca">Telefone</p>
+                        <input class="inputesq" type="password" placeholder="Digite a senha novamente">
+                        <input class="inputdir" type="tel" placeholder="Digite o Número de Telefone">
+                    </div>
+                    <div class="fundoretangulo">
+                        <p class="fonteareabranca">Chave de Acesso</p>
+                        <input class="inputesq" type="text" placeholder="Digite a Chave Mestra de Acesso">
+                    
+              </div>
+            </div>
+                <div class="areabotoes">
+                    <button class="botao" id="botao-paraHome" onclick="voltaHome()">PÁGINA INICIAL</button>
+                    <button id="botaoIndex" class="botao2" onclick="voltaHome()">CONCLUIR</button>
+                </div>   
+            </div>
+        </div>
+        <footer>
+            <div class="loguni">
+                <a href="https://uniamerica.br/" target="_blank"><img src="./img/Uni.png" id="log" alt="Logo Uniamerica"
+                        title="Logo Uniamerica"></a>
+            </div>
+
+            <div class="direito">
+                <p>Crafted by NPJU team © COPYRIGHT 2022</p>
+            </div>
+
+            <div class="div-logo">
+                <img class="logo" src="./img/Logo-definitiva2.png" alt="">
+            </div>
+
+        </footer>
+        <script src="t_cadastro.js"></script>
+</body>
+
+</html>
